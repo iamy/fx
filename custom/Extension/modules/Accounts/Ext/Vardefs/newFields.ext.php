@@ -606,4 +606,84 @@ $dictionary['Account']['fields']['region_activity'] = array (
       'len' => '255',
       'size' => '20',
     );
-	
+$dictionary['Account']['fields']['billing_address_area'] = array (
+    'name' => 'billing_address_area',
+    'vname' => 'LBL_BILLING_ADDRESS_AREA',
+    'type' => 'varchar',
+    'len' => '100',
+    'group' => 'billing_address',
+    'merge_filter' => 'enabled',
+    );
+$dictionary['Account']['fields']['shipping_address_area'] = array (
+    'name' => 'shipping_address_area',
+    'vname' => 'LBL_SHIPPING_ADDRESS_AREA',
+    'type' => 'varchar',
+    'len' => 100,
+    'group' => 'shipping_address',
+    'merge_filter' => 'enabled',
+    );
+$dictionary['Account']['fields']['billing_address_house'] = array (
+    'name' => 'billing_address_house',
+    'vname' => 'LBL_BILLING_ADDRESS_HOUSE',
+    'type' => 'varchar',
+    'len' => '100',
+    'group' => 'billing_address',
+    'merge_filter' => 'enabled',
+    );
+$dictionary['Account']['fields']['shipping_address_house'] = array (
+    'name' => 'shipping_address_house',
+    'vname' => 'LBL_SHIPPING_ADDRESS_HOUSE',
+    'type' => 'varchar',
+    'len' => 100,
+    'group' => 'shipping_address',
+    'merge_filter' => 'enabled',
+    );
+$dictionary['Account']['fields']['billing_address_structure'] = array (
+    'name' => 'billing_address_structure',
+    'vname' => 'LBL_BILLING_ADDRESS_STRUCTURE',
+    'type' => 'varchar',
+    'len' => '100',
+    'group' => 'billing_address',
+    'merge_filter' => 'enabled',
+    );
+$dictionary['Account']['fields']['shipping_address_structure'] = array (
+    'name' => 'shipping_address_structure',
+    'vname' => 'LBL_SHIPPING_ADDRESS_STRUCTURE',
+    'type' => 'varchar',
+    'len' => 100,
+    'group' => 'shipping_address',
+    'merge_filter' => 'enabled',
+    );
+$dictionary['Account']['fields']['billing_address_apartment'] = array (
+    'name' => 'billing_address_apartment',
+    'vname' => 'LBL_BILLING_ADDRESS_APARTMENT',
+    'type' => 'varchar',
+    'len' => '100',
+    'group' => 'billing_address',
+    'merge_filter' => 'enabled',
+    );
+$dictionary['Account']['fields']['shipping_address_apartment'] = array (
+    'name' => 'shipping_address_apartment',
+    'vname' => 'LBL_SHIPPING_ADDRESS_APARTMENT',
+    'type' => 'varchar',
+    'len' => 100,
+    'group' => 'shipping_address',
+    'merge_filter' => 'enabled',
+    );
+$dictionary['Account']['fields']['billing_address_oktmo'] = array (
+    'name' => 'billing_address_oktmo',
+    'vname' => 'LBL_BILLING_ADDRESS_OKTMO',
+    'type' => 'varchar',
+    'len' => '100',
+    'group' => 'billing_address',
+    'merge_filter' => 'enabled',
+    );
+$dictionary['Account']['fields']['shipping_address_oktmo'] = array (
+    'name' => 'shipping_address_oktmo',
+    'vname' => 'LBL_SHIPPING_ADDRESS_OKTMO',
+    'type' => 'varchar',
+    'len' => 100,
+    'group' => 'shipping_address',
+    'merge_filter' => 'enabled',
+    );
+

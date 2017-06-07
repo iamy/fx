@@ -33,7 +33,7 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 (function(){var Dom=YAHOO.util.Dom,Event=YAHOO.util.Event;SUGAR.AddressField=function(checkId,fromKey,toKey){this.fromKey=fromKey;this.toKey=toKey;Event.onAvailable(checkId,this.testCheckboxReady,this);}
-SUGAR.AddressField.prototype={elems:["address_street","address_city","address_state","address_postalcode","address_country"],tHasText:false,syncAddressCheckbox:true,originalBgColor:'#FFFFFF',testCheckboxReady:function(obj){for(var x in obj.elems){var f=obj.fromKey+"_"+obj.elems[x];var t=obj.toKey+"_"+obj.elems[x];var e1=Dom.get(t);var e2=Dom.get(f);if(e1!=null&&typeof e1!="undefined"&&e2!=null&&typeof e2!="undefined"){if(!obj.tHasText&&YAHOO.lang.trim(e1.value)!=""){obj.tHasText=true;}
+SUGAR.AddressField.prototype={elems:["address_postalcode","address_country","address_state","address_area","address_city","address_street","address_house","address_structure","address_apartment","address_oktmo"],tHasText:false,syncAddressCheckbox:true,originalBgColor:'#FFFFFF',testCheckboxReady:function(obj){for(var x in obj.elems){var f=obj.fromKey+"_"+obj.elems[x];var t=obj.toKey+"_"+obj.elems[x];var e1=Dom.get(t);var e2=Dom.get(f);if(e1!=null&&typeof e1!="undefined"&&e2!=null&&typeof e2!="undefined"){if(!obj.tHasText&&YAHOO.lang.trim(e1.value)!=""){obj.tHasText=true;}
 if(e1.value!=e2.value)
 {obj.syncAddressCheckbox=false;break;}
 obj.originalBgColor=e1.style.backgroundColor;}}

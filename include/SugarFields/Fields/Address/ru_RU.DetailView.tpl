@@ -41,14 +41,32 @@
 <table border='0' cellpadding='0' cellspacing='0' width='100%'>
 <tr>
 <td width='99%'>
-<input type="hidden" class="sugar_field" id="{{$displayParams.key}}_address_street" value="{$fields.{{$displayParams.key}}_address_street.value|escape:'html_entity_decode'|escape:'html'|url2html|nl2br}">
-<input type="hidden" class="sugar_field" id="{{$displayParams.key}}_address_city" value="{$fields.{{$displayParams.key}}_address_city.value|escape:'html_entity_decode'|escape:'html'|url2html|nl2br}">
-<input type="hidden" class="sugar_field" id="{{$displayParams.key}}_address_state" value="{$fields.{{$displayParams.key}}_address_state.value|escape:'html_entity_decode'|escape:'html'|url2html|nl2br}">
-<input type="hidden" class="sugar_field" id="{{$displayParams.key}}_address_country" value="{$fields.{{$displayParams.key}}_address_country.value|escape:'html_entity_decode'|escape:'html'|url2html|nl2br}">
-<input type="hidden" class="sugar_field" id="{{$displayParams.key}}_address_postalcode" value="{$fields.{{$displayParams.key}}_address_postalcode.value|escape:'html_entity_decode'|escape:'html'|url2html|nl2br}">
-{$fields.{{$displayParams.key}}_address_street.value|escape:'html_entity_decode'|escape:'html'|url2html|nl2br}<br>
-{$fields.{{$displayParams.key}}_address_city.value|escape:'html_entity_decode'|escape:'html'|url2html|nl2br} {$fields.{{$displayParams.key}}_address_state.value|escape:'html_entity_decode'|strip_tags|url2html|nl2br}&nbsp;&nbsp;{$fields.{{$displayParams.key}}_address_postalcode.value|escape:'html_entity_decode'|strip_tags|url2html|nl2br}<br>
-{$fields.{{$displayParams.key}}_address_country.value|escape:'html_entity_decode'|escape:'html'|url2html|nl2br}
+    <input type="hidden" class="sugar_field" id="{{$displayParams.key}}_address_postalcode" value="{$fields.{{$displayParams.key}}_address_postalcode.value|escape:'html_entity_decode'|escape:'html'|url2html|nl2br}">
+    <input type="hidden" class="sugar_field" id="{{$displayParams.key}}_address_country" value="{$fields.{{$displayParams.key}}_address_country.value|escape:'html_entity_decode'|escape:'html'|url2html|nl2br}">
+    <input type="hidden" class="sugar_field" id="{{$displayParams.key}}_address_state" value="{$fields.{{$displayParams.key}}_address_state.value|escape:'html_entity_decode'|escape:'html'|url2html|nl2br}">
+    <input type="hidden" class="sugar_field" id="{{$displayParams.key}}_address_area" value="{$fields.{{$displayParams.key}}_address_area.value|escape:'html_entity_decode'|escape:'html'|url2html|nl2br}">
+    <input type="hidden" class="sugar_field" id="{{$displayParams.key}}_address_city" value="{$fields.{{$displayParams.key}}_address_city.value|escape:'html_entity_decode'|escape:'html'|url2html|nl2br}">
+    <input type="hidden" class="sugar_field" id="{{$displayParams.key}}_address_street" value="{$fields.{{$displayParams.key}}_address_street.value|escape:'html_entity_decode'|escape:'html'|url2html|nl2br}">
+    <input type="hidden" class="sugar_field" id="{{$displayParams.key}}_address_house" value="{$fields.{{$displayParams.key}}_address_house.value|escape:'html_entity_decode'|escape:'html'|url2html|nl2br}">
+    <input type="hidden" class="sugar_field" id="{{$displayParams.key}}_address_structure" value="{$fields.{{$displayParams.key}}_address_structure.value|escape:'html_entity_decode'|escape:'html'|url2html|nl2br}">
+    <input type="hidden" class="sugar_field" id="{{$displayParams.key}}_address_apartment" value="{$fields.{{$displayParams.key}}_address_apartment.value|escape:'html_entity_decode'|escape:'html'|url2html|nl2br}">
+    <input type="hidden" class="sugar_field" id="{{$displayParams.key}}_address_oktmo" value="{$fields.{{$displayParams.key}}_address_oktmo.value|escape:'html_entity_decode'|escape:'html'|url2html|nl2br}">
+
+
+
+
+    {$fields.{{$displayParams.key}}_address_postalcode.value|escape:'html_entity_decode'|strip_tags|url2html|nl2br},&nbsp;&nbsp;
+    {$fields.{{$displayParams.key}}_address_country.value|escape:'html_entity_decode'|escape:'html'|url2html|nl2br}<BR/>
+    {$fields.{{$displayParams.key}}_address_state.value|escape:'html_entity_decode'|strip_tags|url2html|nl2br},&nbsp;&nbsp;
+    {$fields.{{$displayParams.key}}_address_area.value|escape:'html_entity_decode'|strip_tags|url2html|nl2br}<BR/>
+    {$fields.{{$displayParams.key}}_address_city.value|escape:'html_entity_decode'|escape:'html'|url2html|nl2br}<BR>
+    {$fields.{{$displayParams.key}}_address_street.value|escape:'html_entity_decode'|escape:'html'|url2html|nl2br},&nbsp;
+    {$fields.{{$displayParams.key}}_address_house.value|escape:'html_entity_decode'|escape:'html'|url2html|nl2br},&nbsp;
+    {$fields.{{$displayParams.key}}_address_structure.value|escape:'html_entity_decode'|escape:'html'|url2html|nl2br},&nbsp;
+    {$fields.{{$displayParams.key}}_address_apartment.value|escape:'html_entity_decode'|escape:'html'|url2html|nl2br}<BR/>
+    {$fields.{{$displayParams.key}}_address_oktmo.value|escape:'html_entity_decode'|escape:'html'|url2html|nl2br}
+
+
 </td>
 {{if !empty($displayParams.enableConnectors)}}
 <td class="dataField">

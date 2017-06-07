@@ -2,7 +2,7 @@
 // created: 2017-04-25 11:29:13
 $mod_strings = array (
   'LBL_DETAILVIEW_PANEL1' => 'Рассылка',
-  'LBL_STATE' => 'Регион:',
+  'LBL_STATE' => 'Регион/область:',
   'LBL_BILLING_ADDRESS_STREET' => 'Юридический адрес принципала - улица:',
   'LBL_BILLING_ADDRESS_CITY' => 'Юридический адрес принципала - город:',
   'LBL_BILLING_ADDRESS_STATE' => 'Юридический адрес принципала - область:',
@@ -33,7 +33,7 @@ $mod_strings = array (
   'LBL_DATE_REG_USTAV' => 'Дата регистрации Устава', 
   'LBL_UR_LOCALITY' => 'Населённый пункт',
   'LBL_UR_AREA' => 'Район',
-  'LBL_UR_STREET' => 'Улица',
+  'LBL_UR_STREET' => 'Улица, проспект, переулок и пр.',
   'LBL_UR_HOUSE' => 'Дом',
   'LBL_UR_STRUCTURE' => 'Корпус (строение)',
   'LBL_UR_APARTMENT' => 'Квартира/офис',
@@ -51,6 +51,22 @@ $mod_strings = array (
   'LBL_AUTHORIZED_SHARE_CAPITAL' => 'Объявленый',
   'LBL_PAID_SHARE_CAPITAL' => 'Оплаченный',
   'LBL_REGION_ACTIVITY' => 'Регион деятельности',
-  
+  'LBL_BILLING_STREET' => 'Улица, проспект, переулок и пр.',
+  'LBL_AREA' => 'Район',
+  'LBL_BILLING_ADDRESS_AREA' => 'Район',
+  'LBL_SHIPPING_ADDRESS_AREA' => 'Район',
+  'LBL_HOUSE' => 'Дом',
+  'LBL_BILLING_ADDRESS_HOUSE' => 'Дом',
+  'LBL_SHIPPING_ADDRESS_HOUSE' => 'Дом',
+  'LBL_STRUCTURE' => 'Корпус(строение)',
+  'LBL_BILLING_ADDRESS_STRUCTURE' => 'Корпус(строение)',
+  'LBL_SHIPPING_ADDRESS_STRUCTURE' => 'Корпус(строение)',
+  'LBL_APARTMENT' => 'Квартира/офис',
+  'LBL_BILLING_ADDRESS_APARTMENT' => 'Квартира/офис',
+  'LBL_SHIPPING_ADDRESS_APARTMENT' => 'Квартира/офис',
+  'LBL_OKTMO' => 'ОКТМО по фактическому адресу',
+  'LBL_BILLING_ADDRESS_OKTMO' => 'ОКТМО по юридическому адресу',
+  'LBL_SHIPPING_ADDRESS_OKTMO' => 'ОКТМО по фактическому адресу',
+
   
 );

@@ -47,7 +47,7 @@
     }
 
     SUGAR.AddressField.prototype = {
-        elems  : ["address_street", "address_city", "address_state", "address_postalcode", "address_country"],
+        elems  : ["address_postalcode", "address_country", "address_state", "address_area", "address_city", "address_street", "address_house", "address_structure", "address_apartment", "address_oktmo"],
         tHasText : false,
         syncAddressCheckbox : true,
         originalBgColor : '#FFFFFF',

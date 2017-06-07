@@ -40,82 +40,166 @@
 *}
 <script type="text/javascript" src='{sugar_getjspath file="include/SugarFields/Fields/Address/SugarFieldAddress.js"}'></script>
 {{assign var="key" value=$displayParams.key|upper}}
-{{assign var="street" value=$displayParams.key|cat:'_address_street'}}
-{{assign var="city" value=$displayParams.key|cat:'_address_city'}}
-{{assign var="state" value=$displayParams.key|cat:'_address_state'}}
-{{assign var="country" value=$displayParams.key|cat:'_address_country'}}
 {{assign var="postalcode" value=$displayParams.key|cat:'_address_postalcode'}}
+{{assign var="country" value=$displayParams.key|cat:'_address_country'}}
+{{assign var="state" value=$displayParams.key|cat:'_address_state'}}
+{{assign var="area" value=$displayParams.key|cat:'_address_area'}}
+{{assign var="city" value=$displayParams.key|cat:'_address_city'}}
+{{assign var="street" value=$displayParams.key|cat:'_address_street'}}
+{{assign var="house" value=$displayParams.key|cat:'_address_house'}}
+{{assign var="structure" value=$displayParams.key|cat:'_address_structure'}}
+{{assign var="apartment" value=$displayParams.key|cat:'_address_apartment'}}
+{{assign var="oktmo" value=$displayParams.key|cat:'_address_oktmo'}}
+
 <fieldset id='{{$key}}_address_fieldset'>
 <legend>{sugar_translate label='LBL_{{$key}}_ADDRESS' module='{{$module}}'}</legend>
 <table border="0" cellspacing="1" cellpadding="0" class="edit" width="100%">
-<tr>
-<td valign="top" id="{{$street}}_label" width='25%' scope='row' >
-<label for="{{$street}}">{sugar_translate label='LBL_{{$key}}_STREET' module='{{$module}}'}:</label>
-{if $fields.{{$street}}.required || {{if $street|lower|in_array:$displayParams.required}}true{{else}}false{{/if}}}
-<span class="required">{$APP.LBL_REQUIRED_SYMBOL}</span>
-{/if}
-</td>
-<td width="*">
-{{if $displayParams.maxlength}}
-<textarea id="{{$street}}" name="{{$street}}" maxlength="{{$displayParams.maxlength}}" rows="{{$displayParams.rows|default:4}}" cols="{{$displayParams.cols|default:60}}" tabindex="{{$tabindex}}">{$fields.{{$street}}.value}</textarea>
-{{else}}
-<textarea id="{{$street}}" name="{{$street}}" rows="{{$displayParams.rows|default:4}}" cols="{{$displayParams.cols|default:60}}" tabindex="{{$tabindex}}">{$fields.{{$street}}.value}</textarea>
-{{/if}}
-</td>
-</tr>
+	<tr>
 
-<tr>
+		<td id="{{$postalcode}}_label" width='{{$def.templateMeta.widths[$smarty.foreach.colIteration.index].label}}%' scope='row' >
 
-<td id="{{$city}}_label" width='{{$def.templateMeta.widths[$smarty.foreach.colIteration.index].label}}%' scope='row' >
-<label for="{{$city}}">{sugar_translate label='LBL_CITY' module='{{$module}}'}:
-{if $fields.{{$city}}.required || {{if $city|lower|in_array:$displayParams.required}}true{{else}}false{{/if}}}
-<span class="required">{$APP.LBL_REQUIRED_SYMBOL}</span>
-{/if}
-</td>
-<td>
-<input type="text" name="{{$city}}" id="{{$city}}" size="{{$displayParams.size|default:30}}" {{if !empty($vardef.len)}}maxlength='{{$vardef.len}}'{{/if}} value='{$fields.{{$city}}.value}' tabindex="{{$tabindex}}">
-</td>
-</tr>
+			<label for="{{$postalcode}}">{sugar_translate label='LBL_POSTAL_CODE' module='{{$module}}'}:</label>
+			{if $fields.{{$postalcode}}.required || {{if $postalcode|lower|in_array:$displayParams.required}}true{{else}}false{{/if}}}
+			<span class="required">{$APP.LBL_REQUIRED_SYMBOL}</span>
+			{/if}
+		</td>
+		<td>
+			<input type="text" name="{{$postalcode}}" id="{{$postalcode}}" size="{{$displayParams.size|default:30}}" {{if !empty($vardef.len)}}maxlength='{{$vardef.len}}'{{/if}} value='{$fields.{{$postalcode}}.value}' tabindex="{{$tabindex}}">
+		</td>
+	</tr>
 
-<tr>
-<td id="{{$state}}_label" width='{{$def.templateMeta.widths[$smarty.foreach.colIteration.index].label}}%' scope='row' >
-<label for="{{$state}}">{sugar_translate label='LBL_STATE' module='{{$module}}'}:</label>
-{if $fields.{{$state}}.required || {{if $state|lower|in_array:$displayParams.required}}true{{else}}false{{/if}}}
-<span class="required">{$APP.LBL_REQUIRED_SYMBOL}</span>
-{/if}
-</td>
-<td>
-<input type="text" name="{{$state}}" id="{{$state}}" size="{{$displayParams.size|default:30}}" {{if !empty($vardef.len)}}maxlength='{{$vardef.len}}'{{/if}} value='{$fields.{{$state}}.value}' tabindex="{{$tabindex}}">
-</td>
-</tr>
+	<tr>
 
-<tr>
+		<td id="{{$country}}_label" width='{{$def.templateMeta.widths[$smarty.foreach.colIteration.index].label}}%' scope='row' >
 
-<td id="{{$postalcode}}_label" width='{{$def.templateMeta.widths[$smarty.foreach.colIteration.index].label}}%' scope='row' >
+			<label for="{{$country}}">{sugar_translate label='LBL_COUNTRY' module='{{$module}}'}:</label>
+			{if $fields.{{$country}}.required || {{if $country|lower|in_array:$displayParams.required}}true{{else}}false{{/if}}}
+			<span class="required">{$APP.LBL_REQUIRED_SYMBOL}</span>
+			{/if}
+		</td>
+		<td>
+			<input type="text" name="{{$country}}" id="{{$country}}" size="{{$displayParams.size|default:30}}" {{if !empty($vardef.len)}}maxlength='{{$vardef.len}}'{{/if}} value='{$fields.{{$country}}.value}' tabindex="{{$tabindex}}">
+		</td>
+	</tr>
 
-<label for="{{$postalcode}}">{sugar_translate label='LBL_POSTAL_CODE' module='{{$module}}'}:</label>
-{if $fields.{{$postalcode}}.required || {{if $postalcode|lower|in_array:$displayParams.required}}true{{else}}false{{/if}}}
-<span class="required">{$APP.LBL_REQUIRED_SYMBOL}</span>
-{/if}
-</td>
-<td>
-<input type="text" name="{{$postalcode}}" id="{{$postalcode}}" size="{{$displayParams.size|default:30}}" {{if !empty($vardef.len)}}maxlength='{{$vardef.len}}'{{/if}} value='{$fields.{{$postalcode}}.value}' tabindex="{{$tabindex}}">
-</td>
-</tr>
+	<tr>
+		<td id="{{$state}}_label" width='{{$def.templateMeta.widths[$smarty.foreach.colIteration.index].label}}%' scope='row' >
+			<label for="{{$state}}">{sugar_translate label='LBL_STATE' module='{{$module}}'}:</label>
+			{if $fields.{{$state}}.required || {{if $state|lower|in_array:$displayParams.required}}true{{else}}false{{/if}}}
+			<span class="required">{$APP.LBL_REQUIRED_SYMBOL}</span>
+			{/if}
+		</td>
+		<td>
+			<input type="text" name="{{$state}}" id="{{$state}}" size="{{$displayParams.size|default:30}}" {{if !empty($vardef.len)}}maxlength='{{$vardef.len}}'{{/if}} value='{$fields.{{$state}}.value}' tabindex="{{$tabindex}}">
+		</td>
+	</tr>
 
-<tr>
 
-<td id="{{$country}}_label" width='{{$def.templateMeta.widths[$smarty.foreach.colIteration.index].label}}%' scope='row' >
 
-<label for="{{$country}}">{sugar_translate label='LBL_COUNTRY' module='{{$module}}'}:</label>
-{if $fields.{{$country}}.required || {{if $country|lower|in_array:$displayParams.required}}true{{else}}false{{/if}}}
-<span class="required">{$APP.LBL_REQUIRED_SYMBOL}</span>
-{/if}
-</td>
-<td>
-<input type="text" name="{{$country}}" id="{{$country}}" size="{{$displayParams.size|default:30}}" {{if !empty($vardef.len)}}maxlength='{{$vardef.len}}'{{/if}} value='{$fields.{{$country}}.value}' tabindex="{{$tabindex}}">
-</td>
-</tr>
+	{* Район *}
+	<tr>
+		<td id="{{$area}}_label" width='{{$def.templateMeta.widths[$smarty.foreach.colIteration.index].label}}%' scope='row' >
+			<label for="{{$area}}">{sugar_translate label='LBL_AREA' module='{{$module}}'}:</label>
+			{if $fields.{{$area}}.required || {{if $area|lower|in_array:$displayParams.required}}true{{else}}false{{/if}}}
+			<span class="required">{$APP.LBL_REQUIRED_SYMBOL}</span>
+			{/if}
+		</td>
+		<td>
+			<input type="text" name="{{$area}}" id="{{$area}}" size="{{$displayParams.size|default:30}}" {{if !empty($vardef.len)}}maxlength='{{$vardef.len}}'{{/if}} value='{$fields.{{$area}}.value}' tabindex="{{$tabindex}}">
+		</td>
+	</tr>
+
+
+	<tr>
+
+		<td id="{{$city}}_label" width='{{$def.templateMeta.widths[$smarty.foreach.colIteration.index].label}}%' scope='row' >
+			<label for="{{$city}}">{sugar_translate label='LBL_CITY' module='{{$module}}'}:
+				{if $fields.{{$city}}.required || {{if $city|lower|in_array:$displayParams.required}}true{{else}}false{{/if}}}
+				<span class="required">{$APP.LBL_REQUIRED_SYMBOL}</span>
+				{/if}
+		</td>
+		<td>
+			<input type="text" name="{{$city}}" id="{{$city}}" size="{{$displayParams.size|default:30}}" {{if !empty($vardef.len)}}maxlength='{{$vardef.len}}'{{/if}} value='{$fields.{{$city}}.value}' tabindex="{{$tabindex}}">
+		</td>
+	</tr>
+
+
+	<tr>
+		<td valign="top" id="{{$street}}_label" width='25%' scope='row' >
+			<label for="{{$street}}">{sugar_translate label='LBL_{{$key}}_STREET' module='{{$module}}'}:</label>
+			{if $fields.{{$street}}.required || {{if $street|lower|in_array:$displayParams.required}}true{{else}}false{{/if}}}
+			<span class="required">{$APP.LBL_REQUIRED_SYMBOL}</span>
+			{/if}
+		</td>
+		<td width="*">
+			{{if $displayParams.maxlength}}
+			<textarea id="{{$street}}" name="{{$street}}" maxlength="{{$displayParams.maxlength}}" rows="{{$displayParams.rows|default:4}}" cols="{{$displayParams.cols|default:60}}" tabindex="{{$tabindex}}">{$fields.{{$street}}.value}</textarea>
+			{{else}}
+			<textarea id="{{$street}}" name="{{$street}}" rows="{{$displayParams.rows|default:4}}" cols="{{$displayParams.cols|default:60}}" tabindex="{{$tabindex}}">{$fields.{{$street}}.value}</textarea>
+			{{/if}}
+		</td>
+	</tr>
+
+	{* Дом house *}
+	<tr>
+		<td id="{{$house}}_label" width='{{$def.templateMeta.widths[$smarty.foreach.colIteration.index].label}}%' scope='row' >
+			<label for="{{$house}}">{sugar_translate label='LBL_HOUSE' module='{{$module}}'}:
+				{if $fields.{{$house}}.required || {{if $house|lower|in_array:$displayParams.required}}true{{else}}false{{/if}}}
+				<span class="required">{$APP.LBL_REQUIRED_SYMBOL}</span>
+				{/if}
+		</td>
+		<td>
+			<input type="text" name="{{$house}}" id="{{$house}}" size="{{$displayParams.size|default:30}}" {{if !empty($vardef.len)}}maxlength='{{$vardef.len}}'{{/if}} value='{$fields.{{$house}}.value}' tabindex="{{$tabindex}}">
+		</td>
+	</tr>
+
+	{* Корпус(строение) structure *}
+	<tr>
+		<td id="{{$structure}}_label" width='{{$def.templateMeta.widths[$smarty.foreach.colIteration.index].label}}%' scope='row' >
+			<label for="{{$structure}}">{sugar_translate label='LBL_STRUCTURE' module='{{$module}}'}:
+				{if $fields.{{$structure}}.required || {{if $structure|lower|in_array:$displayParams.required}}true{{else}}false{{/if}}}
+				<span class="required">{$APP.LBL_REQUIRED_SYMBOL}</span>
+				{/if}
+		</td>
+		<td>
+			<input type="text" name="{{$structure}}" id="{{$structure}}" size="{{$displayParams.size|default:30}}" {{if !empty($vardef.len)}}maxlength='{{$vardef.len}}'{{/if}} value='{$fields.{{$structure}}.value}' tabindex="{{$tabindex}}">
+		</td>
+	</tr>
+
+
+	{* Квартира/офис apartment *}
+	<tr>
+		<td id="{{$apartment}}_label" width='{{$def.templateMeta.widths[$smarty.foreach.colIteration.index].label}}%' scope='row' >
+			<label for="{{$apartment}}">{sugar_translate label='LBL_APARTMENT' module='{{$module}}'}:
+				{if $fields.{{$apartment}}.required || {{if $apartment|lower|in_array:$displayParams.required}}true{{else}}false{{/if}}}
+				<span class="required">{$APP.LBL_REQUIRED_SYMBOL}</span>
+				{/if}
+		</td>
+		<td>
+			<input type="text" name="{{$apartment}}" id="{{$apartment}}" size="{{$displayParams.size|default:30}}" {{if !empty($vardef.len)}}maxlength='{{$vardef.len}}'{{/if}} value='{$fields.{{$apartment}}.value}' tabindex="{{$tabindex}}">
+		</td>
+	</tr>
+
+
+	{* ОКТМО oktmo *}
+	<tr>
+		<td id="{{$oktmo}}_label" width='{{$def.templateMeta.widths[$smarty.foreach.colIteration.index].label}}%' scope='row' >
+			<label for="{{$oktmo}}">{sugar_translate label='LBL_OKTMO' module='{{$module}}'}:
+				{if $fields.{{$oktmo}}.required || {{if $oktmo|lower|in_array:$displayParams.required}}true{{else}}false{{/if}}}
+				<span class="required">{$APP.LBL_REQUIRED_SYMBOL}</span>
+				{/if}
+		</td>
+		<td>
+			<input type="text" name="{{$oktmo}}" id="{{$oktmo}}" size="{{$displayParams.size|default:30}}" {{if !empty($vardef.len)}}maxlength='{{$vardef.len}}'{{/if}} value='{$fields.{{$oktmo}}.value}' tabindex="{{$tabindex}}">
+		</td>
+	</tr>
+
+
+
+
+
+
+
 
 {{if $displayParams.copy}}
 <tr>
