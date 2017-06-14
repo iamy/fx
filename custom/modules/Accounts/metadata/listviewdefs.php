@@ -1,18 +1,11 @@
 <?php
 $listViewDefs ['Accounts'] = 
 array (
-  'SHNAME' => 
+  'NAME' => 
   array (
-    'type' => 'varchar',
-    'label' => 'LBL_SHNAME',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'EIO_POSITION_FL' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_EIO_POSITION_FL',
-    'width' => '10%',
+    'width' => '20%',
+    'label' => 'LBL_LIST_ACCOUNT_NAME',
+    'link' => true,
     'default' => true,
   ),
   'EMAIL1' => 
@@ -32,11 +25,18 @@ array (
     'id' => 'ASSIGNED_USER_ID',
     'default' => true,
   ),
-  'NAME' => 
+  'EIO_POSITION_FL' => 
   array (
-    'width' => '20%',
-    'label' => 'LBL_LIST_ACCOUNT_NAME',
-    'link' => true,
+    'type' => 'varchar',
+    'label' => 'LBL_EIO_POSITION_FL',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'SHNAME' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_SHNAME',
+    'width' => '10%',
     'default' => false,
   ),
   'ACCOUNT_TYPE' => 

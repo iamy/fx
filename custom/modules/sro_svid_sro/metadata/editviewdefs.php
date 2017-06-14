@@ -38,26 +38,40 @@ array (
         0 => 
         array (
           0 => 'name',
-          1 => 
+        ),
+        1 => 
+        array (
+          0 => 
           array (
             'name' => 'date_sro_c',
             'label' => 'LBL_DATE_SRO',
           ),
         ),
-        1 => 
+        2 => 
         array (
           0 => 
           array (
             'name' => 'num_sro_c',
             'label' => 'LBL_NUM_SRO',
           ),
-          1 => 
+        ),
+        3 => 
+        array (
+          0 => 
           array (
             'name' => 'bywhom_sro_c',
             'label' => 'LBL_BYWHOM_SRO',
           ),
         ),
-        2 => 
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'srok_work_sro_c',
+            'label' => 'LBL_SROK_WORK_SRO',
+          ),
+        ),
+        5 => 
         array (
           0 => 
           array (
@@ -65,9 +79,12 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_SRO_FOR',
           ),
-          1 => 'assigned_user_name',
         ),
-        3 => 
+        6 => 
+        array (
+          0 => 'assigned_user_name',
+        ),
+        7 => 
         array (
           0 => 'description',
         ),
