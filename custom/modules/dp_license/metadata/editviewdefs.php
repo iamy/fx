@@ -27,7 +27,6 @@ array (
                         'file' => 'modules/dp_license/edit.view.js',
                     ),
             ),
-
         'useTabs' => false,
       'tabDefs' => 
       array (

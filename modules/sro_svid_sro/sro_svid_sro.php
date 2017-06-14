@@ -74,5 +74,25 @@ class sro_svid_sro extends Basic
 
         return false;
     }
+
+    public function create_new_list_query($order_by, $where, $filter = array(), $params = array(), $show_deleted = 0, $join_type = '', $return_array = false, $parentbean = null, $singleSelect = false, $ifListForExport = false) {
+
+        // Заставляем получить данные по полям
+        $filter['srok_work_sro_c'] = true;
+        $filter['indefinitely_srok_work_sro_c'] = true;
+
+        // Получаем стандартные данные
+        $ret_array = parent::create_new_list_query($order_by, $where, $filter, $params, $show_deleted, $join_type, true, $parentbean, $singleSelect, $ifListForExport);
+
+
+        // Стандартный ответ этой функции
+        if ($return_array) {
+            return $ret_array;
+        }
+
+        return $ret_array['select'] . $ret_array['from'] . $ret_array['where'] . $ret_array['order_by'];
+
+
+    }
 	
 }

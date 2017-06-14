@@ -85,16 +85,24 @@ array (
         array (
           0 => 
           array (
+            'name' => 'indefinitely_srok_work_sro_c',
+            'label' => 'LBL_INDEFINITELY_SROK_WORK_SRO_C',
+          ),
+        ),
+        6 => 
+        array (
+          0 => 
+          array (
             'name' => 'sro_for_c',
             'studio' => 'visible',
             'label' => 'LBL_SRO_FOR',
           ),
         ),
-        6 => 
+        7 => 
         array (
           0 => 'assigned_user_name',
         ),
-        7 => 
+        8 => 
         array (
           0 => 'description',
         ),
