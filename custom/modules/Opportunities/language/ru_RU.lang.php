@@ -1,5 +1,5 @@
 <?php
-// created: 2017-06-05 16:16:52
+// created: 2017-06-08 11:16:56
 $mod_strings = array (
   'LBL_DATE_PUB_PROTOKOL' => 'Дата публикации протокола',
   'LBL_SUBJ_TENDER' => 'Предмет тендера',
@@ -10,7 +10,7 @@ $mod_strings = array (
   'LBL_NMC' => 'НМЦ контракта, руб.',
   'LBL_CIRCS' => 'Условия поставки',
   'LBL_LINK_PROTOKOL' => 'Ссылка на протокол',
-  'LBL_OPPORTUNITY_NAME' => '№ извещения',
+  'LBL_OPPORTUNITY_NAME' => 'Номер извещения',
   'LBL_ACCOUNT_NAME' => 'Победитель',
   'LBL_EMAIL_WIN_CITY' => 'Email победителя City',
   'LBL_EMAIL_WIN_STATE' => 'Email победителя State',

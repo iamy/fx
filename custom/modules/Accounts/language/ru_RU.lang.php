@@ -1,5 +1,5 @@
 <?php
-// created: 2017-06-02 17:01:25
+// created: 2017-06-08 11:20:44
 $mod_strings = array (
   'LBL_MEMBER_ORG_SUBPANEL_TITLE' => 'Связанные компании',
   'LBL_BILLING_ADDRESS' => 'Юридический адрес',
@@ -16,4 +16,5 @@ $mod_strings = array (
   'LBL_EDITVIEW_PANEL5' => 'Учредители',
   'LBL_CONTACTS_SUBPANEL_TITLE' => 'Контакты',
   'LBL_TAX_SYSTEM' => 'Система налогообложения (для выбора нескольких вариантов нажмите и удерживайте Ctrl)',
+  'LBL_NAME' => 'Контрагент:',
 );
