@@ -1,0 +1,3 @@
+<?php
+//THIS FILE IS AUTO GENERATED, DO NOT MODIFY
+$mod_strings['COLUMN_TITLE_INDEFINITELY_TEXT'] = 'Бессрочно';

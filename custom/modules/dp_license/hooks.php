@@ -1,0 +1,29 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: evgen
+ * Date: 14.06.17$
+ * Time: 8:46
+ */
+
+class dp_licenseLogicHooks {
+
+    /**
+     * Установить признак Бессрочности
+     * @param $bean
+     * @param $event
+     * @param $arguments
+     */
+    public function setIndefinitely($bean, $event, $arguments) {
+        if(isset($_REQUEST['action']) AND !in_array($_REQUEST['action'], array('EditView'))) {
+            // В режимах кроме редактирования
+            
+            if($bean->indefinitely_srok_work_license_c) {
+                // Если включен чекбокс Бессрочности
+                // Вместо даты указываем слово "Бессрочно"
+                $bean->srok_work_license_c = 'Бессрочно';
+            }
+        }
+    }
+
+}

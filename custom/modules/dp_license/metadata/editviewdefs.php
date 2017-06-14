@@ -20,7 +20,15 @@ array (
           'field' => '30',
         ),
       ),
-      'useTabs' => false,
+        'includes' =>
+            array (
+                0 =>
+                    array (
+                        'file' => 'modules/dp_license/edit.view.js',
+                    ),
+            ),
+
+        'useTabs' => false,
       'tabDefs' => 
       array (
         'DEFAULT' => 
@@ -68,6 +76,15 @@ array (
           ),
         ),
         3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'indefinitely_srok_work_license_c',
+            'label' => 'LBL_INDEFINITELY_SROK_WORK_LICENSE_C',
+          ),
+          1 => '',
+        ),
+        4 => 
         array (
           0 => 'description',
         ),
