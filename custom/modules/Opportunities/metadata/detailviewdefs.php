@@ -85,11 +85,19 @@ array (
         array (
           0 => 
           array (
+            'name' => 'inn_customer_c',
+            'label' => 'LBL_INN_CUSTOMER',
+          ),
+        ),
+        6 => 
+        array (
+          0 => 
+          array (
             'name' => 'kpp_winer_c',
             'label' => 'LBL_KPP_WINER',
           ),
         ),
-        6 => 
+        7 => 
         array (
           0 => 
           array (
@@ -97,7 +105,7 @@ array (
             'label' => 'LBL_PHONE_WINER',
           ),
         ),
-        7 => 
+        8 => 
         array (
           0 => 
           array (
@@ -105,7 +113,7 @@ array (
             'label' => 'LBL_SUBJ_TENDER',
           ),
         ),
-        8 => 
+        9 => 
         array (
           0 => 
           array (
@@ -113,7 +121,7 @@ array (
             'label' => 'LBL_DATE_PUB_PROTOKOL',
           ),
         ),
-        9 => 
+        10 => 
         array (
           0 => 
           array (
@@ -121,7 +129,7 @@ array (
             'label' => 'LBL_LINK_PROTOKOL',
           ),
         ),
-        10 => 
+        11 => 
         array (
           0 => 
           array (
@@ -129,7 +137,7 @@ array (
             'label' => 'LBL_CIRCS',
           ),
         ),
-        11 => 
+        12 => 
         array (
           0 => 
           array (
@@ -137,7 +145,7 @@ array (
             'label' => 'LBL_NMC',
           ),
         ),
-        12 => 
+        13 => 
         array (
           0 => 
           array (
@@ -146,11 +154,11 @@ array (
             'label' => 'LBL_CURRENCY',
           ),
         ),
-        13 => 
+        14 => 
         array (
           0 => 'date_closed',
         ),
-        14 => 
+        15 => 
         array (
           0 => 
           array (
@@ -158,7 +166,7 @@ array (
             'label' => '{$MOD.LBL_AMOUNT} ({$CURRENCY})',
           ),
         ),
-        15 => 
+        16 => 
         array (
           0 => 
           array (
@@ -167,21 +175,21 @@ array (
             'label' => 'LBL_TS',
           ),
         ),
-        16 => 
+        17 => 
         array (
           0 => 'sales_stage',
           1 => 'lead_source',
         ),
-        17 => 
+        18 => 
         array (
           0 => 'probability',
           1 => 'campaign_name',
         ),
-        18 => 
+        19 => 
         array (
           0 => 'next_step',
         ),
-        19 => 
+        20 => 
         array (
           0 => 
           array (

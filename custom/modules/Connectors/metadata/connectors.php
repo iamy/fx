@@ -1,5 +1,5 @@
 <?php
-// created: 2017-06-07 16:21:07
+// created: 2017-06-26 11:28:04
 $connectors = array (
   'ext_rest_facebook' => 
   array (
