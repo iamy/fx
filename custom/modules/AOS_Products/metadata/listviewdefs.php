@@ -22,6 +22,7 @@ array (
     'label' => 'LBL_PRODUCT_IMAGE',
     'width' => '10%',
     'default' => true,
+    'customCode' => '<a data-lightbox="image-{$ID}" href="{$PRODUCT_IMAGE}" data-title="{$NAME}"><img height="100px" src="{$PRODUCT_IMAGE}"/></a>',
   ),
   'CREATED_BY_NAME' => 
   array (
