@@ -16,18 +16,12 @@ array (
     'label' => 'LBL_TYPE',
     'width' => '10%',
   ),
-  'PRODUCT_IMAGE' =>
+  'PRODUCT_IMAGE_FILENAME' =>
   array (
     'type' => 'varchar',
     'label' => 'LBL_PRODUCT_IMAGE',
     'width' => '10%',
     'default' => true,
-            'customCode' => '<a data-lightbox="product-image"
-                                 href="index.php?entryPoint=download&id={$ID}_product_image&type=AOS_Products"
-                                 data-title="{$fields.name.value}">
-                               <img height="100px"
-                                    src="index.php?entryPoint=download&id={$ID}_product_image&type=AOS_Products"/>
-                              </a>',
   ),
   'CREATED_BY_NAME' =>
   array (
