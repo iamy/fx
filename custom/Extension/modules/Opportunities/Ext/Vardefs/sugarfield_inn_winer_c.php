@@ -9,6 +9,39 @@ $dictionary['Opportunity']['fields']['inn_winer_c']['duplicate_merge_dom_value']
 $dictionary['Opportunity']['indices']['idx_opp_inn_winer_c'] = array (
       'name' => 'idx_opp_inn_winer_c',
       'type' => 'index',
-      'fields' => array ('inn_winer_c')
+      'fields' => array ('inn_winer_c'),
+      'source' => 'non-db'
 );
+
+/*
+
+$dictionary["Opportunity_cstm"] = array(
+    'table' => 'opportunities_cstm',
+    'fields' => //We can added fields here, we must at least have the id_c field
+    array(
+        0 =>
+        array(
+            'name' => 'id_c',
+            'type' => 'id',
+        ),
+        1 =>
+        array(
+            'name' => 'inn_winer_c',
+            'type' => 'varchar',
+        ),
+    ),
+    'indices' => // our custom indexes go here
+    array(
+        0 =>
+        array(
+            'name' => 'idx_opp_inn_winer_c',
+            'type' => 'index',
+            'fields' =>
+            array(
+                0 => 'inn_winer_c',
+            ),
+        ),
+    ),
+);
+*/
  ?>
