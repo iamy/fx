@@ -1,25 +1,25 @@
 <?php
-// created: 2017-05-29 07:13:45
-$dictionary["dp_founder_ul_accounts_1"] = array (
-  'true_relationship_type' => 'one-to-one',
+// created: 2017-07-04 14:13:49
+$dictionary["accounts_dp_license_1"] = array (
+  'true_relationship_type' => 'one-to-many',
   'from_studio' => true,
   'relationships' => 
   array (
-    'dp_founder_ul_accounts_1' => 
+    'accounts_dp_license_1' => 
     array (
-      'lhs_module' => 'dp_founder_ul',
-      'lhs_table' => 'dp_founder_ul',
+      'lhs_module' => 'Accounts',
+      'lhs_table' => 'accounts',
       'lhs_key' => 'id',
-      'rhs_module' => 'Accounts',
-      'rhs_table' => 'accounts',
+      'rhs_module' => 'dp_license',
+      'rhs_table' => 'dp_license',
       'rhs_key' => 'id',
       'relationship_type' => 'many-to-many',
-      'join_table' => 'dp_founder_ul_accounts_1_c',
-      'join_key_lhs' => 'dp_founder_ul_accounts_1dp_founder_ul_ida',
-      'join_key_rhs' => 'dp_founder_ul_accounts_1accounts_idb',
+      'join_table' => 'accounts_dp_license_1_c',
+      'join_key_lhs' => 'accounts_dp_license_1accounts_ida',
+      'join_key_rhs' => 'accounts_dp_license_1dp_license_idb',
     ),
   ),
-  'table' => 'dp_founder_ul_accounts_1_c',
+  'table' => 'accounts_dp_license_1_c',
   'fields' => 
   array (
     0 => 
@@ -43,13 +43,13 @@ $dictionary["dp_founder_ul_accounts_1"] = array (
     ),
     3 => 
     array (
-      'name' => 'dp_founder_ul_accounts_1dp_founder_ul_ida',
+      'name' => 'accounts_dp_license_1accounts_ida',
       'type' => 'varchar',
       'len' => 36,
     ),
     4 => 
     array (
-      'name' => 'dp_founder_ul_accounts_1accounts_idb',
+      'name' => 'accounts_dp_license_1dp_license_idb',
       'type' => 'varchar',
       'len' => 36,
     ),
@@ -58,7 +58,7 @@ $dictionary["dp_founder_ul_accounts_1"] = array (
   array (
     0 => 
     array (
-      'name' => 'dp_founder_ul_accounts_1spk',
+      'name' => 'accounts_dp_license_1spk',
       'type' => 'primary',
       'fields' => 
       array (
@@ -67,20 +67,20 @@ $dictionary["dp_founder_ul_accounts_1"] = array (
     ),
     1 => 
     array (
-      'name' => 'dp_founder_ul_accounts_1_ida1',
+      'name' => 'accounts_dp_license_1_ida1',
       'type' => 'index',
       'fields' => 
       array (
-        0 => 'dp_founder_ul_accounts_1dp_founder_ul_ida',
+        0 => 'accounts_dp_license_1accounts_ida',
       ),
     ),
     2 => 
     array (
-      'name' => 'dp_founder_ul_accounts_1_idb2',
-      'type' => 'index',
+      'name' => 'accounts_dp_license_1_alt',
+      'type' => 'alternate_key',
       'fields' => 
       array (
-        0 => 'dp_founder_ul_accounts_1accounts_idb',
+        0 => 'accounts_dp_license_1dp_license_idb',
       ),
     ),
   ),
