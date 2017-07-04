@@ -136,6 +136,9 @@ class Importer
     {
         global $sugar_config, $mod_strings, $current_user;
 
+        $opp_account_name = '';
+        $opp_account_inn = '';
+
         $focus = clone $this->bean;
         $focus->unPopulateDefaultValues();
         $focus->save_from_post = false;
@@ -143,6 +146,19 @@ class Importer
         ImportFieldSanitize::$createdBeans = array();
         $this->importSource->resetRowErrorCounter();
         $do_save = true;
+
+        if ($this->bean->module_name == 'Opportunities' && 
+            $_REQUEST['module'] == 'Import' && 
+            $_REQUEST['action'] == 'Step4') {
+          for ( $fieldNum = 0; $fieldNum < $_REQUEST['columncount']; $fieldNum++ ) {
+            if ( !isset($this->importColumns[$fieldNum]) )
+                continue;
+            $field           = $this->importColumns[$fieldNum];
+            if ($field == 'account_name') $opp_account_name = $row[$fieldNum];
+            if ($field == 'account_inn') $opp_account_inn = $row[$fieldNum];
+          }
+        }
+
 
         for ( $fieldNum = 0; $fieldNum < $_REQUEST['columncount']; $fieldNum++ )
         {
@@ -304,7 +320,14 @@ class Importer
                 }
                 else
                 {
+                  if ($this->bean->module_name == 'Opportunities' && 
+                    $_REQUEST['module'] == 'Import' && $_REQUEST['action'] == 'Step4' && $fieldDef['name'] = 'account_name') {
+                    $GLOBALS['import_opp_fixing_account_inn'] = $opp_account_inn;
+                    $GLOBALS['import_opp_fixing_account_name'] = $opp_account_name;
+                  }
                     $rowValue = $this->sanitizeFieldValueByType($rowValue, $fieldDef, $defaultRowValue, $focus, $fieldTranslated);
+                  unset($GLOBALS['import_opp_fixing_account_inn']);
+                  unset($GLOBALS['import_opp_fixing_account_name']);
                 }
 
                 if ($rowValue === false)
@@ -422,6 +445,10 @@ class Importer
 
         if ($do_save)
         {
+            if ($this->bean->module_name == 'Opportunities' && 
+                    $_REQUEST['module'] == 'Import' && $_REQUEST['action'] == 'Step4') {
+                    if (empty($focus->inn_winer_c)) $focus->inn_winer_c = $opp_account_inn;
+            }
             $this->saveImportBean($focus, $newRecord);
             // Update the created/updated counter
             $this->importSource->markRowAsImported($newRecord);
@@ -464,6 +491,8 @@ class Importer
                 break;
             case 'relate':
             case 'parent':
+//              if ($_REQUEST['module'] == 'Import' && $_REQUEST['action'] == 'Step4' && $fieldDef['name'] = 'account_name') {
+//                $GLOBALS['import_opp_fixing_account_inn'] = 
                 $returnValue = $this->ifs->relate($rowValue, $fieldDef, $focus, empty($defaultRowValue));
                 if (!$returnValue && !empty($defaultRowValue))
                     $returnValue = $this->ifs->relate($defaultRowValue,$fieldDef, $focus);

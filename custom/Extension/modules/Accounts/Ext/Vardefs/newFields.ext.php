@@ -1,4 +1,6 @@
 <?php
+//$dictionary['Account']['fields']['account_id']['required'] = false;
+//$dictionary['Account']['fields']['account_name']['required'] = false;
 $dictionary['Account']['fields']['shname'] = array(
  'required' => false,
       'name' => 'shname',
@@ -29,13 +31,14 @@ $dictionary['Account']['fields']['inn'] = array(
       'comments' => '',
       'help' => '',
       'importable' => 'true',
+ //     'merge_filter' => 'disabled',
       'duplicate_merge' => 'enabled',
       'duplicate_merge_dom_value' => '1',
       'audited' => true,
       'inline_edit' => true,
       'reportable' => true,
       'unified_search' => false,
-      'merge_filter' => 'disabled',
+      //'merge_filter' => 'enabled',
       'len' => '12',
       'size' => '20',
     );
@@ -362,7 +365,7 @@ $dictionary['Account']['fields']['ur_house'] = array (
       'len' => '10',
       'size' => '20',
     );
-    
+
     $dictionary['Account']['fields']['ur_apartment'] = array (
       'required' => false,
       'name' => 'ur_apartment',
@@ -402,7 +405,7 @@ $dictionary['Account']['fields']['ur_area_fact'] = array (
       'merge_filter' => 'disabled',
       'len' => '150',
       'size' => '20',
-    );	
+    );
 $dictionary['Account']['fields']['ur_locality_fact'] = array (
       'required' => false,
       'name' => 'ur_locality_fact',
@@ -463,7 +466,7 @@ $dictionary['Account']['fields']['ur_house_fact'] =  array (
       'len' => '10',
       'size' => '20',
     );
-    
+
     $dictionary['Account']['fields']['ur_apartment_fact'] = array (
       'required' => false,
       'name' => 'ur_apartment_fact',
@@ -502,7 +505,7 @@ $dictionary['Account']['fields']['oktmo_fact'] = array (
       'unified_search' => false,
       'merge_filter' => 'disabled',
       'len' => '11',
-      'size' => '20',	
+      'size' => '20',
 	);
 $dictionary['Account']['fields']['oktmo_ur'] = array (
 		'required' => false,
@@ -687,3 +690,9 @@ $dictionary['Account']['fields']['shipping_address_oktmo'] = array (
     'merge_filter' => 'enabled',
     );
 
+$dictionary['Account']['indices']['idx_accnt_inn_del'] = array (
+      'name' => 'idx_accnt_inn_del',
+      'type' => 'index',
+      'fields' => array ('inn', 'deleted'),
+//      'source' => 'non-db'
+);

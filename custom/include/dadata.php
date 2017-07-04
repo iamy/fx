@@ -88,10 +88,8 @@ class DaData {
       $res = json_decode ($res, true);
     }
 
-    if ($res) {
-      if (count($res) > 0) {
+    if (is_array($res) > 0 && count($res['suggestions']) > 0) {
         $res = $res['suggestions'][0]['data'];
-      }
     }
 
     return $res;

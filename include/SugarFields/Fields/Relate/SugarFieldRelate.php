@@ -353,16 +353,24 @@ class SugarFieldRelate extends SugarFieldBase {
                             WHERE {$fieldName} = '" . $focus->db->quote($value) . "'
                                 AND deleted != 1";
 
+                if ($focus->module_name = 'Opportunities' &&
+                    $_REQUEST['module'] == 'Import' && $_REQUEST['action'] == 'Step4' && $fieldDef['name'] = 'account_name') {
+                  $query = "SELECT id
+                              FROM {$vardef['table']}
+                              WHERE inn  = '" . $GLOBALS['import_opp_fixing_account_inn'] . "'
+                                AND deleted != 1";
+                }
+
                 $result = $focus->db->limitQuery($query,0,1,true, "Want only a single row");
                 if(!empty($result)){
-                    if ( $relaterow = $focus->db->fetchByAssoc($result) )
+                    if ( $relaterow = $focus->db->fetchByAssoc($result) ) {
                         $focus->$idField = $relaterow['id'];
-                    elseif ( !$settings->addRelatedBean
+                    } elseif ( !$settings->addRelatedBean
                             || ( $newbean->bean_implements('ACL') && !$newbean->ACLAccess('save') )
                             || ( in_array($newbean->module_dir,array('Teams','Users')) )
-                            )
+                            ) {
                         return false;
-                    else {
+                    } else {
                         // add this as a new record in that bean, then relate
                         if ( isset($relatedFieldDef['db_concat_fields'])
                                 && is_array($relatedFieldDef['db_concat_fields']) ) {
@@ -382,6 +390,12 @@ class SugarFieldRelate extends SugarFieldBase {
                         // populate fields from the parent bean to the child bean
                         $focus->populateRelatedBean($newbean);
 
+                        if ($focus->module_name = 'Opportunities' &&
+                            $_REQUEST['module'] == 'Import' && $_REQUEST['action'] == 'Step4' && $fieldDef['name'] = 'account_name') {
+
+                          $newbean->name = $GLOBALS['import_opp_fixing_account_name'];
+                          $newbean->inn = $GLOBALS['import_opp_fixing_account_inn'];
+                        }
                         $newbean->save(false);
                         $focus->$idField = $newbean->id;
                         ImportFieldSanitize::$createdBeans[] = ImportFile::writeRowToLastImport(
