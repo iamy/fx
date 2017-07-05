@@ -48,10 +48,6 @@ array (
         2 => 
         array (
           0 => 'description',
-          1 => 
-          array (
-            'name' => 'dp_founder_ul_accounts_1_name',
-          ),
         ),
       ),
     ),

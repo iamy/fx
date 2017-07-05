@@ -20,13 +20,13 @@ array (
           'field' => '30',
         ),
       ),
-        'includes' =>
-            array (
-                0 =>
-                    array (
-                        'file' => 'modules/sro_svid_sro/edit.view.js',
-                    ),
-            ),
+      'includes' => 
+      array (
+        0 => 
+        array (
+          'file' => 'modules/sro_svid_sro/edit.view.js',
+        ),
+      ),
       'useTabs' => false,
       'tabDefs' => 
       array (
@@ -102,6 +102,10 @@ array (
         8 => 
         array (
           0 => 'description',
+          1 => 
+          array (
+            'name' => 'accounts_sro_svid_sro_1_name',
+          ),
         ),
       ),
     ),

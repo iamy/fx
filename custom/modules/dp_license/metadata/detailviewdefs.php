@@ -84,11 +84,14 @@ array (
             'name' => 'indefinitely_srok_work_license_c',
             'label' => 'LBL_INDEFINITELY_SROK_WORK_LICENSE_C',
           ),
-          1 => '',
         ),
         4 => 
         array (
           0 => 'description',
+          1 => 
+          array (
+            'name' => 'accounts_dp_license_1_name',
+          ),
         ),
       ),
     ),

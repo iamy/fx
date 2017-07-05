@@ -88,6 +88,14 @@ array (
         array (
           0 => 
           array (
+            'name' => 'inn_test_c',
+            'label' => 'LBL_INN_TEST',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
             'name' => 'website',
             'type' => 'link',
             'label' => 'LBL_WEBSITE',
@@ -99,7 +107,7 @@ array (
             'label' => 'LBL_EMAIL',
           ),
         ),
-        3 => 
+        4 => 
         array (
           0 => 
           array (
@@ -112,7 +120,7 @@ array (
             'label' => 'LBL_FAX',
           ),
         ),
-        4 => 
+        5 => 
         array (
           0 => 
           array (
@@ -125,7 +133,7 @@ array (
             'label' => 'LBL_KPP',
           ),
         ),
-        5 => 
+        6 => 
         array (
           0 => 
           array (
@@ -138,7 +146,7 @@ array (
             'label' => 'LBL_OKPO',
           ),
         ),
-        6 => 
+        7 => 
         array (
           0 => 
           array (
@@ -151,7 +159,7 @@ array (
             'label' => 'LBL_OKOGU',
           ),
         ),
-        7 => 
+        8 => 
         array (
           0 => 
           array (
@@ -165,7 +173,7 @@ array (
             'label' => 'LBL_SIC_CODE',
           ),
         ),
-        8 => 
+        9 => 
         array (
           0 => 
           array (
@@ -178,7 +186,7 @@ array (
             'label' => 'LBL_RESIDENT',
           ),
         ),
-        9 => 
+        10 => 
         array (
           0 => 
           array (
@@ -191,7 +199,7 @@ array (
             'label' => 'LBL_NM_REGORGAN',
           ),
         ),
-        10 => 
+        11 => 
         array (
           0 => 
           array (
@@ -204,7 +212,7 @@ array (
             'label' => 'LBL_NM_GOSREG',
           ),
         ),
-        11 => 
+        12 => 
         array (
           0 => 
           array (

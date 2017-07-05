@@ -1,5 +1,5 @@
 <?php
-// created: 2017-06-08 11:20:44
+// created: 2017-07-03 14:04:28
 $mod_strings = array (
   'LBL_MEMBER_ORG_SUBPANEL_TITLE' => 'Связанные компании',
   'LBL_BILLING_ADDRESS' => 'Юридический адрес',
@@ -17,4 +17,6 @@ $mod_strings = array (
   'LBL_CONTACTS_SUBPANEL_TITLE' => 'Контакты',
   'LBL_TAX_SYSTEM' => 'Система налогообложения (для выбора нескольких вариантов нажмите и удерживайте Ctrl)',
   'LBL_NAME' => 'Контрагент:',
+  'LBL_INN_TEST' => 'ИНН Контрагента (test)',
+  'LBL_KPP' => 'КПП',
 );
