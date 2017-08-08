@@ -8,6 +8,13 @@ array (
     'link' => true,
     'default' => true,
   ),
+  'LOT_C' => 
+  array (
+    'type' => 'int',
+    'default' => true,
+    'label' => 'LBL_LOT',
+    'width' => '10%',
+  ),
   'EMAIL_WIN_C' => 
   array (
     'type' => 'varchar',
@@ -44,6 +51,14 @@ array (
       0 => 'account_id',
     ),
   ),
+  'AMOUNT' => 
+  array (
+    'type' => 'currency',
+    'label' => 'LBL_AMOUNT',
+    'currency_format' => true,
+    'width' => '10%',
+    'default' => true,
+  ),
   'SALES_STAGE' => 
   array (
     'width' => '10%',
@@ -57,12 +72,6 @@ array (
     'align' => 'right',
     'default' => true,
     'currency_format' => true,
-  ),
-  'DATE_CLOSED' => 
-  array (
-    'width' => '10%',
-    'label' => 'LBL_LIST_DATE_CLOSED',
-    'default' => true,
   ),
   'ASSIGNED_USER_NAME' => 
   array (
@@ -112,6 +121,12 @@ array (
   array (
     'width' => '5%',
     'label' => 'LBL_MODIFIED',
+    'default' => false,
+  ),
+  'DATE_CLOSED' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_LIST_DATE_CLOSED',
     'default' => false,
   ),
 );

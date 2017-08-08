@@ -1,17 +1,4 @@
 <?php
-$GLOBALS['app_list_strings']['account_type_dom']=array (
-  '' => '',
-  'Analyst' => 'Analyst',
-  'Competitor' => 'Competitor',
-  'Customer' => 'Customer',
-  'Integrator' => 'Integrator',
-  'Investor' => 'Investor',
-  'Partner' => 'Partner',
-  'Press' => 'Press',
-  'Prospect' => 'Prospect',
-  'Reseller' => 'Reseller',
-  'Other' => 'Other',
-);
 $GLOBALS['app_list_strings']['status_nedv_list']=array (
   'self' => 'Собственность',
   'arenda' => 'Аренда',
@@ -54,4 +41,38 @@ $GLOBALS['app_list_strings']['ts_list']=array (
   'ts_new' => 'Продажа нового продукта новому клиенту',
   'ts_old' => 'Продажа нового продукта имеющемуся клиенту',
   'ts_rep' => 'Повторная продажа продукта имеющемуся клиенту',
+);
+
+$GLOBALS['app_list_strings']['account_type_dom']=array (
+  '' => '',
+  'Analyst' => 'Analyst',
+  'Customer' => 'Customer',
+  'Investor' => 'Investor',
+  'Partner' => 'Partner',
+  'Prospect' => 'Prospect',
+);
+$GLOBALS['app_list_strings']['type_kontr_list']=array (
+  'member' => 'Участник закупок',
+  'agent' => 'Агент',
+  'bank' => 'Банк',
+  'partner' => 'Партнер',
+  'customer' => 'Заказчик',
+);
+$GLOBALS['app_list_strings']['document_category_dom']=array (
+  '' => '',
+  'reporting' => 'Отчётность',
+  'founder' => 'Учредительные',
+  'passport' => 'Паспорта',
+  'documents' => 'Документы на адрес',
+  'references' => 'Справки из банков и ФНС',
+  'license' => 'СРО и лицензии',
+  'experience' => 'Опыт',
+  'reputation' => 'Репутация',
+  'others' => 'Прочие',
+);
+$GLOBALS['app_list_strings']['document_subcategory_dom']=array (
+  '' => '',
+  'Marketing Collateral' => 'Marketing Collateral',
+  'Product Brochures' => 'Product Brochures',
+  'FAQ' => 'FAQ',
 );

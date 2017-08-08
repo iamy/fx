@@ -95,7 +95,6 @@ array (
           array (
             'name' => 'dp_realty_accounts_name',
           ),
-          1 => '',
         ),
       ),
     ),

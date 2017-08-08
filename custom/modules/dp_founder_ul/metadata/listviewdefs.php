@@ -9,13 +9,6 @@ array (
     'default' => true,
     'link' => true,
   ),
-  'UL_SHARE_SIZE_CUR_C' => 
-  array (
-    'type' => 'decimal',
-    'default' => true,
-    'label' => 'LBL_UL_SHARE_SIZE_CUR',
-    'width' => '10%',
-  ),
   'UL_SIZE_PERC_C' => 
   array (
     'type' => 'decimal',

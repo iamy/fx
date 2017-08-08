@@ -57,12 +57,6 @@ array (
         ),
         3 => 
         array (
-          0 => 
-          array (
-            'name' => 'link_contact_c',
-            'studio' => 'visible',
-            'label' => 'LBL_LINK_CONTACT',
-          ),
         ),
         4 => 
         array (

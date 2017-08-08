@@ -1,5 +1,5 @@
 <?php
-// created: 2017-05-24 21:55:43
+// created: 2017-07-06 15:40:13
 $subpanel_layout['list_fields'] = array (
   'name' => 
   array (
@@ -8,23 +8,18 @@ $subpanel_layout['list_fields'] = array (
     'width' => '45%',
     'default' => true,
   ),
-  'billing_address_city' => 
-  array (
-    'vname' => 'LBL_LIST_CITY',
-    'width' => '20%',
-    'default' => true,
-  ),
-  'billing_address_country' => 
+  'shname' => 
   array (
     'type' => 'varchar',
-    'vname' => 'LBL_BILLING_ADDRESS_COUNTRY',
-    'width' => '7%',
+    'vname' => 'LBL_SHNAME',
+    'width' => '10%',
     'default' => true,
   ),
-  'phone_office' => 
+  'inn' => 
   array (
-    'vname' => 'LBL_LIST_PHONE',
-    'width' => '20%',
+    'type' => 'varchar',
+    'vname' => 'LBL_INN',
+    'width' => '10%',
     'default' => true,
   ),
   'edit_button' => 

@@ -57,3 +57,37 @@ $GLOBALS['app_list_strings']['ts_list']=array (
 );
 $app_list_strings['moduleList']['AOS_Products']='Продукты';
 $app_list_strings['moduleListSingular']['AOS_Products']='Продукт';
+
+$GLOBALS['app_list_strings']['account_type_dom']=array (
+  '' => '',
+  'Prospect' => 'Участник закупок',
+  'Analyst' => 'Заказчик',
+  'Customer' => 'Агент',
+  'Investor' => 'Банк',
+  'Partner' => 'Партнёр',
+);
+$GLOBALS['app_list_strings']['type_kontr_list']=array (
+  'member' => 'Участник закупок',
+  'agent' => 'Агент',
+  'bank' => 'Банк',
+  'partner' => 'Партнер',
+  'customer' => 'Заказчик',
+);
+$GLOBALS['app_list_strings']['document_category_dom']=array (
+  '' => '',
+  'reporting' => 'Отчётность',
+  'founder' => 'Учредительные',
+  'passport' => 'Паспорта',
+  'documents' => 'Документы на адрес',
+  'references' => 'Справки из банков и ФНС',
+  'license' => 'СРО и лицензии',
+  'experience' => 'Опыт',
+  'reputation' => 'Репутация',
+  'others' => 'Прочие',
+);
+$GLOBALS['app_list_strings']['document_subcategory_dom']=array (
+  '' => '',
+  'Marketing Collateral' => 'Маркетинг',
+  'Product Brochures' => 'Брошюры товаров',
+  'FAQ' => 'ЧаВо',
+);

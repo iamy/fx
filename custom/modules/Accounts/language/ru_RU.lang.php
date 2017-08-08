@@ -1,5 +1,5 @@
 <?php
-// created: 2017-07-03 14:04:28
+// created: 2017-07-19 11:13:54
 $mod_strings = array (
   'LBL_MEMBER_ORG_SUBPANEL_TITLE' => 'Связанные компании',
   'LBL_BILLING_ADDRESS' => 'Юридический адрес',
@@ -17,6 +17,12 @@ $mod_strings = array (
   'LBL_CONTACTS_SUBPANEL_TITLE' => 'Контакты',
   'LBL_TAX_SYSTEM' => 'Система налогообложения (для выбора нескольких вариантов нажмите и удерживайте Ctrl)',
   'LBL_NAME' => 'Контрагент:',
-  'LBL_INN_TEST' => 'ИНН Контрагента (test)',
   'LBL_KPP' => 'КПП',
+  'LBL_ACCOUNTS_DP_FOUNDER_UL_1_FROM_DP_FOUNDER_UL_TITLE' => 'Учредитель (юридическое лицо)',
+  'LBL_ACCOUNTS_SRO_SVID_SRO_1_FROM_SRO_SVID_SRO_TITLE' => 'Свидетельства СРО',
+  'LBL_ACCOUNTS_DP_FOUNDER_FL_1_FROM_DP_FOUNDER_FL_TITLE' => 'Учредитель (физическое лицо)',
+  'LBL_ACCOUNTS_DP_LICENSE_1_FROM_DP_LICENSE_TITLE' => 'Лицензии',
+  'LBL_OPPORTUNITIES_SUBPANEL_TITLE' => 'Сделки',
+  'LBL_TYPE' => 'Тип:',
+  'LBL_TYPE_KONTR' => 'Тип контрагента',
 );

@@ -17,6 +17,15 @@ array (
     'width' => '10%',
     'default' => true,
   ),
+  'DP_REALTY_ACCOUNTS_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => true,
+    'label' => 'LBL_DP_REALTY_ACCOUNTS_FROM_ACCOUNTS_TITLE',
+    'id' => 'DP_REALTY_ACCOUNTSACCOUNTS_IDA',
+    'width' => '10%',
+    'default' => true,
+  ),
   'TARGET_NEDV' => 
   array (
     'type' => 'enum',

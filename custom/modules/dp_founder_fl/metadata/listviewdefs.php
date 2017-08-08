@@ -23,16 +23,6 @@ array (
     'label' => 'LBL_FL_SIZE_PERC',
     'width' => '10%',
   ),
-  'LINK_CONTACT_C' => 
-  array (
-    'type' => 'relate',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_LINK_CONTACT',
-    'id' => 'CONTACT_ID_C',
-    'link' => true,
-    'width' => '10%',
-  ),
   'ASSIGNED_USER_NAME' => 
   array (
     'width' => '9%',

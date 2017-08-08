@@ -49,9 +49,17 @@ array (
         ),
         1 => 
         array (
-          0 => 'account_name',
+          0 => 
+          array (
+            'name' => 'lot_c',
+            'label' => 'LBL_LOT',
+          ),
         ),
         2 => 
+        array (
+          0 => 'account_name',
+        ),
+        3 => 
         array (
           0 => 
           array (
@@ -59,7 +67,7 @@ array (
             'label' => 'LBL_EMAIL_WIN',
           ),
         ),
-        3 => 
+        4 => 
         array (
           0 => 
           array (
@@ -67,23 +75,7 @@ array (
             'label' => 'LBL_INN_WINER',
           ),
         ),
-        4 => 
-        array (
-          0 => 
-          array (
-            'name' => 'tcustomer_c',
-            'label' => 'LBL_TCUSTOMER',
-          ),
-        ),
         5 => 
-        array (
-          0 => 
-          array (
-            'name' => 'inn_customer_c',
-            'label' => 'LBL_INN_CUSTOMER',
-          ),
-        ),
-        6 => 
         array (
           0 => 
           array (
@@ -91,7 +83,23 @@ array (
             'label' => 'LBL_KPP_WINER',
           ),
         ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'tcustomer_c',
+            'label' => 'LBL_TCUSTOMER',
+          ),
+        ),
         7 => 
+        array (
+          0 => 
+          array (
+            'name' => 'inn_customer_c',
+            'label' => 'LBL_INN_CUSTOMER',
+          ),
+        ),
+        8 => 
         array (
           0 => 
           array (
@@ -99,7 +107,7 @@ array (
             'label' => 'LBL_PHONE_WINER',
           ),
         ),
-        8 => 
+        9 => 
         array (
           0 => 
           array (
@@ -107,7 +115,7 @@ array (
             'label' => 'LBL_SUBJ_TENDER',
           ),
         ),
-        9 => 
+        10 => 
         array (
           0 => 
           array (
@@ -115,7 +123,7 @@ array (
             'label' => 'LBL_DATE_PUB_PROTOKOL',
           ),
         ),
-        10 => 
+        11 => 
         array (
           0 => 
           array (
@@ -123,7 +131,7 @@ array (
             'label' => 'LBL_LINK_PROTOKOL',
           ),
         ),
-        11 => 
+        12 => 
         array (
           0 => 
           array (
@@ -131,7 +139,7 @@ array (
             'label' => 'LBL_CIRCS',
           ),
         ),
-        12 => 
+        13 => 
         array (
           0 => 
           array (
@@ -139,7 +147,7 @@ array (
             'label' => 'LBL_NMC',
           ),
         ),
-        13 => 
+        14 => 
         array (
           0 => 
           array (
@@ -147,21 +155,21 @@ array (
             'label' => 'LBL_CURRENCY',
           ),
         ),
-        14 => 
+        15 => 
         array (
           0 => 
           array (
             'name' => 'date_closed',
           ),
         ),
-        15 => 
+        16 => 
         array (
           0 => 
           array (
             'name' => 'amount',
           ),
         ),
-        16 => 
+        17 => 
         array (
           0 => 
           array (
@@ -170,21 +178,27 @@ array (
             'label' => 'LBL_TS',
           ),
         ),
-        17 => 
-        array (
-          0 => 'sales_stage',
-          1 => 'lead_source',
-        ),
         18 => 
         array (
-          0 => 'probability',
-          1 => 'campaign_name',
+          0 => 'sales_stage',
         ),
         19 => 
         array (
-          0 => 'next_step',
+          0 => 'lead_source',
         ),
         20 => 
+        array (
+          0 => 'probability',
+        ),
+        21 => 
+        array (
+          0 => 'campaign_name',
+        ),
+        22 => 
+        array (
+          0 => 'next_step',
+        ),
+        23 => 
         array (
           0 => 'description',
         ),

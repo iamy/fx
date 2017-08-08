@@ -1,11 +1,25 @@
 <?php
 $listViewDefs ['Accounts'] = 
 array (
+  'SHNAME' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_SHNAME',
+    'width' => '10%',
+    'default' => true,
+  ),
   'NAME' => 
   array (
     'width' => '20%',
     'label' => 'LBL_LIST_ACCOUNT_NAME',
     'link' => true,
+    'default' => true,
+  ),
+  'INN' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_INN',
+    'width' => '10%',
     'default' => true,
   ),
   'EMAIL1' => 
@@ -15,6 +29,12 @@ array (
     'sortable' => false,
     'link' => true,
     'customCode' => '{$EMAIL1_LINK}{$EMAIL1}</a>',
+    'default' => true,
+  ),
+  'PHONE_OFFICE' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_LIST_PHONE',
     'default' => true,
   ),
   'ASSIGNED_USER_NAME' => 
@@ -29,13 +49,6 @@ array (
   array (
     'type' => 'varchar',
     'label' => 'LBL_EIO_POSITION_FL',
-    'width' => '10%',
-    'default' => false,
-  ),
-  'SHNAME' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_SHNAME',
     'width' => '10%',
     'default' => false,
   ),
@@ -61,12 +74,6 @@ array (
   array (
     'width' => '5%',
     'label' => 'LBL_DATE_ENTERED',
-    'default' => false,
-  ),
-  'PHONE_OFFICE' => 
-  array (
-    'width' => '10%',
-    'label' => 'LBL_LIST_PHONE',
     'default' => false,
   ),
   'BILLING_ADDRESS_CITY' => 

@@ -199,11 +199,6 @@ array (
         ),
         6 => 
         array (
-          0 => '',
-          1 => '',
-        ),
-        7 => 
-        array (
           0 => 
           array (
             'name' => 'phone_work',
@@ -215,7 +210,7 @@ array (
             'label' => 'LBL_MOBILE_PHONE',
           ),
         ),
-        8 => 
+        7 => 
         array (
           0 => 
           array (
@@ -229,7 +224,7 @@ array (
             'label' => 'LBL_DEPARTMENT',
           ),
         ),
-        9 => 
+        8 => 
         array (
           0 => 
           array (
@@ -244,7 +239,7 @@ array (
             'label' => 'LBL_DESCRIPTION',
           ),
         ),
-        10 => 
+        9 => 
         array (
           0 => 
           array (

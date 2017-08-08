@@ -48,7 +48,6 @@ array (
         0 => 
         array (
           0 => 'name',
-          1 => 'assigned_user_name',
         ),
         1 => 
         array (
@@ -56,12 +55,6 @@ array (
           array (
             'name' => 'num_license_c',
             'label' => 'LBL_NUM_LICENSE',
-          ),
-          1 => 
-          array (
-            'name' => 'license_for_c',
-            'studio' => 'visible',
-            'label' => 'LBL_LICENSE_FOR',
           ),
         ),
         2 => 
@@ -71,13 +64,19 @@ array (
             'name' => 'srok_work_license_c',
             'label' => 'LBL_SROK_WORK_LICENSE',
           ),
-          1 => 
+        ),
+        3 => 
+        array (
+        ),
+        4 => 
+        array (
+          0 => 
           array (
             'name' => 'bywhom_license_c',
             'label' => 'LBL_BYWHOM_LICENSE',
           ),
         ),
-        3 => 
+        5 => 
         array (
           0 => 
           array (
@@ -85,13 +84,20 @@ array (
             'label' => 'LBL_INDEFINITELY_SROK_WORK_LICENSE_C',
           ),
         ),
-        4 => 
+        6 => 
         array (
           0 => 'description',
-          1 => 
+        ),
+        7 => 
+        array (
+          0 => 
           array (
             'name' => 'accounts_dp_license_1_name',
           ),
+        ),
+        8 => 
+        array (
+          0 => 'assigned_user_name',
         ),
       ),
     ),

@@ -43,7 +43,7 @@ $dictionary['Account']['fields']['inn'] = array(
       'size' => '20',
     );
 $dictionary['Account']['fields']['kpp'] = array(
-      'required' => true,
+      'required' => false,
       'name' => 'kpp',
       'vname' => 'LBL_KPP',
       'type' => 'varchar',

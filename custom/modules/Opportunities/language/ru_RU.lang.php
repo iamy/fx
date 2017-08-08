@@ -1,5 +1,5 @@
 <?php
-// created: 2017-06-14 17:03:34
+// created: 2017-07-06 15:09:53
 $mod_strings = array (
   'LBL_DATE_PUB_PROTOKOL' => 'Дата публикации протокола',
   'LBL_SUBJ_TENDER' => 'Предмет тендера',
@@ -23,4 +23,5 @@ $mod_strings = array (
   'LBL_TS' => 'Тип сделки',
   'LBL_AMOUNT' => 'Обеспечение исполнения:, руб.',
   'LBL_INN_CUSTOMER' => 'ИНН Заказчика',
+  'LBL_LOT' => 'Лот',
 );

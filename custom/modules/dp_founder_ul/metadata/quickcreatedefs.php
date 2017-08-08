@@ -50,8 +50,8 @@ array (
         array (
           0 => 
           array (
-            'name' => 'ul_share_size_cur_c',
-            'label' => 'LBL_UL_SHARE_SIZE_CUR',
+            'name' => 'ul_share_size_c',
+            'label' => 'LBL_UL_SHARE_SIZE',
           ),
         ),
         3 => 

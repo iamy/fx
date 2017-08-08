@@ -75,6 +75,12 @@ array (
               'required' => true,
             ),
           ),
+          1 => 
+          array (
+            'name' => 'type_kontr_c',
+            'studio' => 'visible',
+            'label' => 'LBL_TYPE_KONTR',
+          ),
         ),
         1 => 
         array (
@@ -85,14 +91,6 @@ array (
           ),
         ),
         2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'inn_test_c',
-            'label' => 'LBL_INN_TEST',
-          ),
-        ),
-        3 => 
         array (
           0 => 
           array (
@@ -107,7 +105,7 @@ array (
             'label' => 'LBL_EMAIL',
           ),
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -120,7 +118,7 @@ array (
             'label' => 'LBL_FAX',
           ),
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
@@ -133,7 +131,7 @@ array (
             'label' => 'LBL_KPP',
           ),
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (
@@ -146,7 +144,7 @@ array (
             'label' => 'LBL_OKPO',
           ),
         ),
-        7 => 
+        6 => 
         array (
           0 => 
           array (
@@ -159,7 +157,7 @@ array (
             'label' => 'LBL_OKOGU',
           ),
         ),
-        8 => 
+        7 => 
         array (
           0 => 
           array (
@@ -173,7 +171,7 @@ array (
             'label' => 'LBL_SIC_CODE',
           ),
         ),
-        9 => 
+        8 => 
         array (
           0 => 
           array (
@@ -186,7 +184,7 @@ array (
             'label' => 'LBL_RESIDENT',
           ),
         ),
-        10 => 
+        9 => 
         array (
           0 => 
           array (
@@ -199,7 +197,7 @@ array (
             'label' => 'LBL_NM_REGORGAN',
           ),
         ),
-        11 => 
+        10 => 
         array (
           0 => 
           array (
@@ -212,7 +210,7 @@ array (
             'label' => 'LBL_NM_GOSREG',
           ),
         ),
-        12 => 
+        11 => 
         array (
           0 => 
           array (
