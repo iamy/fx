@@ -67,7 +67,7 @@ $mod_strings = array (
   'LBL_OKTMO' => 'ОКТМО по фактическому адресу',
   'LBL_BILLING_ADDRESS_OKTMO' => 'ОКТМО по юридическому адресу',
   'LBL_SHIPPING_ADDRESS_OKTMO' => 'ОКТМО по фактическому адресу',
-  'LBL_DADATA_REQUEST_BUTTON_TITLE' => 'Запрос в ДаДата',
+  'LBL_DADATA_REQUEST_BUTTON_TITLE' => 'Актуализировать данные',
 
   
 );
