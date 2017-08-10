@@ -28,6 +28,7 @@ class AccountsController extends SugarController
 			}
 
       substituteAccountsFieldsDaData ($bean);
+                        $bean->dadata_checked = true;
 
 			$bean->save();
 

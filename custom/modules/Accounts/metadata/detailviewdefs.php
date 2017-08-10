@@ -106,12 +106,7 @@ array (
             'comment' => 'Name of the Company',
             'label' => 'LBL_NAME',
           ),
-          1 => 
-          array (
-            'name' => 'type_kontr_c',
-            'studio' => 'visible',
-            'label' => 'LBL_TYPE_KONTR',
-          ),
+          1 => 'dadata_checked',
         ),
         1 => 
         array (
@@ -119,6 +114,12 @@ array (
           array (
             'name' => 'shname',
             'label' => 'LBL_SHNAME',
+          ),
+          1 => 
+          array (
+            'name' => 'type_kontr_c',
+            'studio' => 'visible',
+            'label' => 'LBL_TYPE_KONTR',
           ),
         ),
         2 => 
