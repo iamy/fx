@@ -353,7 +353,7 @@ class SugarFieldRelate extends SugarFieldBase {
                             WHERE {$fieldName} = '" . $focus->db->quote($value) . "'
                                 AND deleted != 1";
 
-                if ($focus->module_name = 'Opportunities' &&
+                if ($focus->module_name == 'Opportunities' &&
                     $_REQUEST['module'] == 'Import' && $_REQUEST['action'] == 'Step4' && $fieldDef['name'] = 'account_name') {
                   $query = "SELECT id
                               FROM {$vardef['table']}
