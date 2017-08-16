@@ -220,26 +220,34 @@ array (
           ),
           1 => 
           array (
-            'name' => 'department',
-            'label' => 'LBL_DEPARTMENT',
+            'name' => 'email1',
+            'studio' => 'false',
+            'label' => 'LBL_EMAIL_ADDRESS',
           ),
         ),
         8 => 
         array (
           0 => 
           array (
-            'name' => 'email1',
-            'studio' => 'false',
-            'label' => 'LBL_EMAIL_ADDRESS',
+            'name' => 'department',
+            'label' => 'LBL_DEPARTMENT',
           ),
           1 => 
+          array (
+            'name' => 'snils_c',
+            'label' => 'LBL_SNILS',
+          ),
+        ),
+        9 => 
+        array (
+          0 => 
           array (
             'name' => 'description',
             'comment' => 'Full text of the note',
             'label' => 'LBL_DESCRIPTION',
           ),
         ),
-        9 => 
+        10 => 
         array (
           0 => 
           array (

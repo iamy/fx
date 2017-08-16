@@ -136,23 +136,31 @@ array (
             'comment' => 'The title of the contact',
             'label' => 'LBL_TITLE',
           ),
-          1 => 'department',
-        ),
-        8 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'email1',
             'studio' => 'false',
             'label' => 'LBL_EMAIL_ADDRESS',
           ),
+        ),
+        8 => 
+        array (
+          0 => 'department',
           1 => 
+          array (
+            'name' => 'snils_c',
+            'label' => 'LBL_SNILS',
+          ),
+        ),
+        9 => 
+        array (
+          0 => 
           array (
             'name' => 'description',
             'label' => 'LBL_DESCRIPTION',
           ),
         ),
-        9 => 
+        10 => 
         array (
           0 => 
           array (

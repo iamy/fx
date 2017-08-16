@@ -102,13 +102,9 @@ array (
             'comment' => 'Full text of the note',
             'label' => 'LBL_DESCRIPTION',
           ),
+          1 => '',
         ),
         6 => 
-        array (
-          0 => 'related_doc_name',
-          1 => 'related_doc_rev_number',
-        ),
-        7 => 
         array (
           0 => 
           array (
