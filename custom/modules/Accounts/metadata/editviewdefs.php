@@ -11,8 +11,14 @@ array (
         array (
           0 => 'SAVE',
           1 => 'CANCEL',
-        ),
-      ),
+	  2 => array (
+		  'customCode' => '<input id="dadata_request_button" title="{$MOD.LBL_DADATA_REQUEST_BUTTON_TITLE}"  class="button"
+			      onclick="dadataRequest(); return false;"
+			      name="button"
+			      value="{$MOD.LBL_DADATA_REQUEST_BUTTON_TITLE}"
+			      type="submit">'
+          ),
+       ),
       'maxColumns' => '2',
       'widths' => 
       array (
@@ -27,13 +33,18 @@ array (
           'field' => '30',
         ),
       ),
+      ),
       'includes' => 
       array (
-        0 => 
+	      /*
         array (
           'file' => 'modules/Accounts/Account.js',
+	),
+	       */
+        array (
+          'file' => 'custom/modules/Accounts/customAccount.js',
         ),
-      ),
+        ),
       'useTabs' => true,
       'tabDefs' => 
       array (
