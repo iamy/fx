@@ -696,3 +696,12 @@ $dictionary['Account']['indices']['idx_accnt_inn_del'] = array (
       'fields' => array ('inn', 'deleted'),
 //      'source' => 'non-db'
 );
+
+$dictionary['Account']['fields']['dadata_checked'] = array (
+            'name' => 'dadata_checked',
+            'vname' => 'LBL_DADATA_CHECKED',
+            'type' => 'bool',
+            'default' => '0',
+            'reportable' => false,
+            'inline_edit' => false,
+);
