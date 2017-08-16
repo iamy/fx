@@ -234,6 +234,11 @@ array (
             'label' => 'LBL_ASSIGNED_TO',
           ),
         ),
+	12 => array (
+          array (
+            'customCode' => '<span id="new_contact" style="color: red;"></span>'
+          ),
+        ),
       ),
       'lbl_editview_panel1' => 
       array (
@@ -304,6 +309,13 @@ array (
           ),
           1 => 'employees',
         ),
+	2 => array (
+          array ('customCode' => '<input type="hidden" name="contact_last_name" id="contact_last_name" value="">'),
+          array ('customCode' => '<input type="hidden" name="contact_first_name" id="contact_first_name" value="">'),
+          array ('customCode' => '<input type="hidden" name="contact_patr_c" id="contact_patr_c" value="">'),
+          array ('customCode' => '<input type="hidden" name="contact_full_name" id="contact_full_name" value="">'),
+          array ('customCode' => '<input type="hidden" name="contact_create" id="contact_create" value="0">'),
+        ),        
       ),
     ),
   ),

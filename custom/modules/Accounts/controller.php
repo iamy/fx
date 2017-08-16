@@ -95,9 +95,34 @@ class AccountsController extends SugarController
 		  $res['bean'][$f] = $timedate->to_display_date($v, false);
           }
         }
+
+        $create_account = false;
+        if(strlen($res['bean']['inn']) != 12) {
+          if(isset($res['contact'])) {
+            if(!empty($_REQUEST['id'])) {
+              $exists = $db->getOne ("
+                          SELECT 1 
+                          FROM accounts_contacts AS ac
+                          INNER JOIN contacts AS c ON c.id = ac.contact_id
+                          INNER JOIN contacts_cstm cc ON cc.id_c = c.id
+                          WHERE ac.account_id = '{$_REQUEST['id']}' 
+                              AND ac.deleted = 0
+                              AND CONCAT_WS(' ', c.last_name, c.first_name, cc.patr_c) = '{$res['contact']['full_name']}'
+                              AND c.deleted = 0
+              ");
+  
+              if (empty($exists)) {
+                $create_account = true;
+              }
+            } else {
+              $create_account = true;
+            }
+          } 
+        }
+
         ob_clean();
 	header('Content-Type: application/json; charset=UTF-8');
-	echo $json->encode (array ('status' => 'ok', 'bean' => $res['bean'], 'contact' => isset($res['contact']) ? $res['contact'] : array ()));
+	echo $json->encode (array ('status' => 'ok', 'bean' => $res['bean'], 'contact' => $create_account ? $res['contact'] : array ()));
 	die;
       }
 
