@@ -1,12 +1,16 @@
 
 function updateContactFullName() {
     var full_name = $('#contact_full_name').val();
+    var position =  $('#contact_position').val();
+    var id =  $('#contact_id').val();
+
     var inn = $('#inn').val();
     if (inn.length == 12 || full_name.length == 0) {
       var text = '';
       $('#contact_create').val('0');
     } else {
-      var text = 'Будет создан контакт: ' + full_name;
+      var action = id == '' ? 'создан' : 'изменен';
+      var text = 'Будет ' + action + ' создан контакт: ' + full_name + (position == '' ? '' : ' (' + position + ')');
       $('#contact_create').val('1');
     }
 
@@ -33,7 +37,16 @@ function dadataRequest () {
                    if (res.bean[f] != null && res.bean[f].length > 0) $('#' + f).val(res.bean[f]);
                  }
 
-                 if (! ('contact' in res)) return;
+                 if (! ('contact' in res)) {
+                         $('#contact_full_name').val('');
+                         $('#contact_last_name').val('');
+                         $('#contact_first_name').val('');
+                         $('#contact_part_c').val('');
+                         $('#contact_position').val('');
+                         $('#contact_id').val('');
+                         $('#contact_create').val('0');
+			 return;
+                 }
 
 		 for (f in res.contact) {
                    if (res.contact[f].length > 0) $('#contact_' + f).val(res.contact[f]);
@@ -59,6 +72,7 @@ function dadataRequest () {
 
 YAHOO.util.Event.onDOMReady(function() {
   YAHOO.util.Event.addListener('inn', "change", function () { 
+	  dadataRequest();
 	  updateContactFullName();
   });
 });

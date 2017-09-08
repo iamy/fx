@@ -314,6 +314,8 @@ array (
           array ('customCode' => '<input type="hidden" name="contact_first_name" id="contact_first_name" value="">'),
           array ('customCode' => '<input type="hidden" name="contact_patr_c" id="contact_patr_c" value="">'),
           array ('customCode' => '<input type="hidden" name="contact_full_name" id="contact_full_name" value="">'),
+          array ('customCode' => '<input type="hidden" name="contact_position" id="contact_position" value="">'),
+          array ('customCode' => '<input type="hidden" name="contact_id" id="contact_id" value="">'),
           array ('customCode' => '<input type="hidden" name="contact_create" id="contact_create" value="0">'),
         ),        
       ),

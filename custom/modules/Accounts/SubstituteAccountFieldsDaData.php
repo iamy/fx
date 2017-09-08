@@ -44,6 +44,7 @@ function getAccountsFieldsDaData (String $qacc, $qcustomer) {
               $contact['first_name'] = $first_name;
               $contact['patr_c'] = $middle_name;
 	      $contact['full_name'] = $res['management']['name'];
+	      $contact['position'] = $res['management']['post'];
           }
       }
     }

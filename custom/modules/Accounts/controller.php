@@ -42,8 +42,8 @@ class AccountsController extends SugarController
         $bean->dadata_checked = true;
 
 	if(strlen($bean->inn) != 12 && isset($res['contact'])) {
-          $exists = $db->getOne ("
-                      SELECT 1 
+          $contact_id = $db->getOne ("
+                      SELECT ac.contact_id 
                       FROM accounts_contacts AS ac
                       INNER JOIN contacts AS c ON c.id = ac.contact_id
                       INNER JOIN contacts_cstm cc ON cc.id_c = c.id
@@ -53,13 +53,19 @@ class AccountsController extends SugarController
                           AND c.deleted = 0
          ");
 
-          if (empty($exists)) {
+          if (empty($contact_id)) {
             $bean->load_relationship('contacts');
             $contact = BeanFactory::newBean('Contacts');
             foreach ($res['contact'] as $k => $v) $contact->$k = $v;
+	    $contact->is_manager = true;
             $contact->save();
             $bean->contacts->add($contact->id);
-          }
+	  } else {
+            $contact = BeanFactory::getBean('Contacts', $contact_id);
+            foreach ($res['contact'] as $k => $v) $contact->$k = $v;
+	    $contact->is_manager = true;
+            $contact->save();
+          }		  
 	}  
 
 	$bean->save();
@@ -96,12 +102,12 @@ class AccountsController extends SugarController
           }
         }
 
-        $create_account = false;
+        $is_contact = false;
         if(strlen($res['bean']['inn']) != 12) {
           if(isset($res['contact'])) {
             if(!empty($_REQUEST['id'])) {
-              $exists = $db->getOne ("
-                          SELECT 1 
+              $contact_id = $db->getOne ("
+                          SELECT ac.contact_id 
                           FROM accounts_contacts AS ac
                           INNER JOIN contacts AS c ON c.id = ac.contact_id
                           INNER JOIN contacts_cstm cc ON cc.id_c = c.id
@@ -111,18 +117,19 @@ class AccountsController extends SugarController
                               AND c.deleted = 0
               ");
   
-              if (empty($exists)) {
-                $create_account = true;
-              }
+	      if (!empty($exists)) {
+		$res['contact']['id'] = $contact_id;
+	      }
+              $is_contact = true;
             } else {
-              $create_account = true;
+              $is_contact = true;
             }
           } 
         }
 
         ob_clean();
 	header('Content-Type: application/json; charset=UTF-8');
-	echo $json->encode (array ('status' => 'ok', 'bean' => $res['bean'], 'contact' => $create_account ? $res['contact'] : array ()));
+	echo $json->encode (array ('status' => 'ok', 'bean' => $res['bean'], 'contact' => $is_contact ? $res['contact'] : array ()));
 	die;
       }
 
