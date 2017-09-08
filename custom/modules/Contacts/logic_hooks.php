@@ -11,6 +11,8 @@ $hook_array['after_save'] = Array();
 $hook_array['after_save'][] = Array(1, 'Update Portal', 'modules/Contacts/updatePortal.php','updatePortal', 'updateUser'); 
 $hook_array['after_save'][] = Array(77, 'updateRelatedMeetingsGeocodeInfo', 'modules/Contacts/ContactsJjwg_MapsLogicHook.php','ContactsJjwg_MapsLogicHook', 'updateRelatedMeetingsGeocodeInfo'); 
 $hook_array['after_save'][] = Array(77, 'updateManagerInfo', 'custom/modules/Contacts/updateManagerInfoLogicHook.php','UpdateManagerInfoLogicHook', 'update'); 
+$hook_array['after_save'][] = Array(77, 'updateAccountantInfo', 'custom/modules/Contacts/updateManagerInfoLogicHook.php','UpdateManagerInfoLogicHook', 'updateAccountant'); 
+
 
 
 
