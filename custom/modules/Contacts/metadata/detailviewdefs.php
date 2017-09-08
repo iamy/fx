@@ -149,6 +149,7 @@ array (
             'comment' => 'Last name of the contact',
             'label' => 'LBL_LAST_NAME',
           ),
+	  1 => 'is_manager'
         ),
         1 => 
         array (
@@ -158,6 +159,7 @@ array (
             'comment' => 'First name of the contact',
             'label' => 'LBL_FIRST_NAME',
           ),
+	  1 => 'is_general_accountant'
         ),
         2 => 
         array (
@@ -166,6 +168,7 @@ array (
             'name' => 'patr_c',
             'label' => 'LBL_PATR',
           ),
+	  1 => 'position'
         ),
         3 => 
         array (

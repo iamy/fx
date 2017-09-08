@@ -66,6 +66,7 @@ array (
           array (
             'name' => 'last_name',
           ),
+	  1 => 'is_manager'
         ),
         1 => 
         array (
@@ -74,6 +75,7 @@ array (
             'name' => 'first_name',
             'customCode' => '{html_options name="salutation" id="salutation" options=$fields.salutation.options selected=$fields.salutation.value}&nbsp;<input name="first_name"  id="first_name" size="25" maxlength="25" type="text" value="{$fields.first_name.value}">',
           ),
+	  1 => 'is_general_accountant'
         ),
         2 => 
         array (
@@ -82,6 +84,7 @@ array (
             'name' => 'patr_c',
             'label' => 'LBL_PATR',
           ),
+	  1 => 'position'
         ),
         3 => 
         array (
