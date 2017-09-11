@@ -11,8 +11,8 @@ class CreateDaDataContactHook {
 	  if ($_REQUEST['contact_create'] == '1') {
 
             if(strlen($bean->inn) != 12) {
-              $exists = $db->getOne ("
-                      SELECT 1 
+              $contact_id = $db->getOne ("
+                      SELECT ac.contact_id 
                       FROM accounts_contacts AS ac
                       INNER JOIN contacts AS c ON c.id = ac.contact_id
                       INNER JOIN contacts_cstm cc ON cc.id_c = c.id
@@ -22,16 +22,27 @@ class CreateDaDataContactHook {
                           AND c.deleted = 0
               ");
 
-              if (empty($exists)) {
+              if (empty($contact_id)) {
                 $bean->load_relationship('contacts');
                 $contact = BeanFactory::newBean('Contacts');
 		$contact->last_name = $_REQUEST['contact_last_name'];
 		$contact->first_name = $_REQUEST['contact_first_name'];
 		$contact->patr_c = $_REQUEST['contact_patr_c'];
+		$contact->position = $_REQUEST['contact_position'];
+		$contact->is_manager = true;
                 $contact->save();
 
                 $bean->contacts->add($contact->id);
-              }
+	      } else {
+                if ($contact = BeanFactory::getBean('Contacts', $contact_id)) {
+		  $contact->last_name = $_REQUEST['contact_last_name'];
+		  $contact->first_name = $_REQUEST['contact_first_name'];
+		  $contact->patr_c = $_REQUEST['contact_patr_c'];
+		  $contact->position = $_REQUEST['contact_position'];
+		  $contact->is_manager = true;
+                  $contact->save();
+		}
+	      }
             }  
          }  
   }
