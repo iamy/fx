@@ -120,7 +120,7 @@ array (
             'label' => 'LBL_PRODUCT_IMAGE',
             'customCode' => '{if !empty($fields.product_image_filename.value)}
                                 <a data-lightbox="product-image" href="{$IMAGE_URL}" data-title="{$fields.name.value}">
-                                <img height="100px" src="{$IMAGE_URL}"/></a>
+                                <img src="{$IMAGE_URL}"/></a>
                               {else}
                               {/if}',
           ),

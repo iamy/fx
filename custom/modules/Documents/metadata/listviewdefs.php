@@ -41,6 +41,13 @@ array (
     'label' => 'LBL_LIST_SUBCATEGORY',
     'default' => true,
   ),
+  'REVISION' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'label' => 'LBL_DOC_VERSION',
+    'width' => '10%',
+  ),
   'LAST_REV_CREATE_DATE' => 
   array (
     'width' => '10%',
@@ -71,16 +78,6 @@ array (
     'width' => '10%',
     'label' => 'LBL_DATE_ENTERED',
     'default' => true,
-  ),
-  'FOR_KONTR_C' => 
-  array (
-    'type' => 'relate',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_FOR_KONTR',
-    'id' => 'ACCOUNT_ID_C',
-    'link' => true,
-    'width' => '10%',
   ),
   'MODIFIED_BY_NAME' => 
   array (

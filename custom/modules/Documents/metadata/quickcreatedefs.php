@@ -90,12 +90,6 @@ array (
               'required' => true,
             ),
           ),
-          1 => 
-          array (
-            'name' => 'for_kontr_c',
-            'studio' => 'visible',
-            'label' => 'LBL_FOR_KONTR',
-          ),
         ),
         3 => 
         array (
