@@ -1,5 +1,5 @@
 <?php
-// created: 2017-07-19 11:13:54
+// created: 2017-08-17 13:53:11
 $mod_strings = array (
   'LBL_MEMBER_ORG_SUBPANEL_TITLE' => 'Связанные компании',
   'LBL_BILLING_ADDRESS' => 'Юридический адрес',
@@ -25,4 +25,5 @@ $mod_strings = array (
   'LBL_OPPORTUNITIES_SUBPANEL_TITLE' => 'Сделки',
   'LBL_TYPE' => 'Тип:',
   'LBL_TYPE_KONTR' => 'Тип контрагента',
+  'LBL_INN' => 'ИНН',
 );

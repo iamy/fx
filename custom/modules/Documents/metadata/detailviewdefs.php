@@ -105,17 +105,6 @@ array (
         ),
         6 => 
         array (
-          0 => 'related_doc_name',
-          1 => 'related_doc_rev_number',
-        ),
-        7 => 
-        array (
-          0 => 
-          array (
-            'name' => 'for_kontr_c',
-            'studio' => 'visible',
-            'label' => 'LBL_FOR_KONTR',
-          ),
           1 => 
           array (
             'name' => 'assigned_user_name',

@@ -1,5 +1,5 @@
 <?php
-// created: 2017-06-01 13:10:02
+// created: 2017-08-10 08:54:49
 $mod_strings = array (
   'LBL_PRIMARY_ADDRESS' => 'Адрес регистрации',
   'LBL_ALTERNATE_ADDRESS' => 'Адрес фактического проживания',
@@ -26,4 +26,5 @@ $mod_strings = array (
   'LBL_FOR_KONTRAGENT_ACCOUNT_ID' => 'Связан со следующими контрагентами (связано с ID модуля Контрагент)',
   'LBL_FOR_KONTRAGENT' => 'Связан со следующими контрагентами',
   'LBL_EDITVIEW_PANEL3' => 'Связи',
+  'LBL_SNILS' => 'СНИЛС',
 );

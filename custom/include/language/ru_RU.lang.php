@@ -91,3 +91,23 @@ $GLOBALS['app_list_strings']['document_subcategory_dom']=array (
   'Product Brochures' => 'Брошюры товаров',
   'FAQ' => 'ЧаВо',
 );
+$GLOBALS['app_list_strings']['podkat_c_list']=array (
+  'bb_ofr' => 'ББ и ОФР',
+  'envd' => 'Декларации ЕНВД',
+);
+$GLOBALS['app_list_strings']['kat_list']=array (
+  'reporting' => 'Отчетность',
+  'conditor' => 'Учредительные',
+);
+$GLOBALS['app_list_strings']['podkat_c_0']=array (
+  'bb_ofr' => 'ББ и ОФР',
+  'envd' => 'Декларации ЕНВД',
+);
+$GLOBALS['app_list_strings']['kat_0']=array (
+  'reporting' => 'Отчётность',
+  'conditor' => 'Учредительные',
+);
+$GLOBALS['app_list_strings']['document_status_dom']=array (
+  'Active' => 'Актуален',
+  'Draft' => 'Не актуален',
+);

@@ -1,7 +1,7 @@
 <?php
- // created: 2017-06-01 09:32:59
+ // created: 2017-08-17 13:53:27
 $dictionary['Contact']['fields']['title']['len']='12';
-$dictionary['Contact']['fields']['title']['required']=true;
+$dictionary['Contact']['fields']['title']['required']=false;
 $dictionary['Contact']['fields']['title']['inline_edit']=true;
 $dictionary['Contact']['fields']['title']['merge_filter']='disabled';
 $dictionary['Contact']['fields']['title']['comments']='';
