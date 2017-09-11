@@ -117,7 +117,7 @@ class AccountsController extends SugarController
                               AND c.deleted = 0
               ");
   
-	      if (!empty($exists)) {
+	      if (!empty($contact_id)) {
 		$res['contact']['id'] = $contact_id;
 	      }
               $is_contact = true;
