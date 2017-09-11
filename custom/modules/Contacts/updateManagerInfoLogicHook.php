@@ -10,7 +10,7 @@ class updateManagerInfoLogicHook
         if ($bean->fetched_row['is_manager'] !== $bean->is_manager 
 		&& $bean->is_manager == 1 
 		&& !empty($bean->account_id)
-	)     
+	) {
           $acc = BeanFactory::getBean('Accounts', $bean->account_id);
 	  if (empty($acc->id)) return;
 
@@ -23,6 +23,7 @@ class updateManagerInfoLogicHook
 	      $other->save();
 	    }
 	  }
+        }
 
     }  
 
@@ -32,7 +33,7 @@ class updateManagerInfoLogicHook
         if ($bean->fetched_row['is_general_accountant'] !== $bean->is_general_accountant 
 		&& $bean->is_general_accountant == 1 
 		&& !empty($bean->account_id)
-	)     
+	) {
           $acc = BeanFactory::getBean('Accounts', $bean->account_id);
 	  if (empty($acc->id)) return;
 
@@ -44,6 +45,7 @@ class updateManagerInfoLogicHook
 	      $other->save();
 	    }
 	  }
+	}
 
 	  return;
     }  

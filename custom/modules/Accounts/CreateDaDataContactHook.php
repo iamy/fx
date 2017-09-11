@@ -30,6 +30,7 @@ class CreateDaDataContactHook {
 		$contact->patr_c = $_REQUEST['contact_patr_c'];
 		$contact->position = $_REQUEST['contact_position'];
 		$contact->is_manager = true;
+		$contact->account_id = $bean->id;
                 $contact->save();
 
                 $bean->contacts->add($contact->id);
