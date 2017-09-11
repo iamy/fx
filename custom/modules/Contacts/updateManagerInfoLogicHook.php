@@ -44,7 +44,7 @@ class updateManagerInfoLogicHook
 
         if ($bean->fetched_row['is_general_accountant'] !== $bean->is_general_accountant 
 		&& $bean->is_general_accountant == 1 
-		&& !empty($bean->account_id)
+		&& !empty($account_id)
 	) {
           $acc = BeanFactory::getBean('Accounts', $account_id);
 	  if (empty($acc->id)) return;
