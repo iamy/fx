@@ -46,7 +46,7 @@ class updateManagerInfoLogicHook
 		&& $bean->is_general_accountant == 1 
 		&& !empty($bean->account_id)
 	) {
-          $acc = BeanFactory::getBean('Accounts', $bean->account_id);
+          $acc = BeanFactory::getBean('Accounts', $account_id);
 	  if (empty($acc->id)) return;
 
           $acc->load_relationship('contacts');
