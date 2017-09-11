@@ -58,6 +58,7 @@ class AccountsController extends SugarController
             $contact = BeanFactory::newBean('Contacts');
             foreach ($res['contact'] as $k => $v) $contact->$k = $v;
 	    $contact->is_manager = true;
+	    $contact->account_id = $bean->id;
             $contact->save();
             $bean->contacts->add($contact->id);
 	  } else {
